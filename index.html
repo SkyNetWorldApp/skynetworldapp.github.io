@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://skynet.pulsedigitalagency.com/ -->
+<html ng-app="myApp" lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>SkyNet</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="http://skynet.pulsedigitalagency.com/images/ico.png">
+    <link rel="stylesheet" href="./SkyNet_files/bootstrap.min.css">
+    <link href="./SkyNet_files/css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./SkyNet_files/css(1)">
+</head>
+<body style="overflow: auto;">
+    <div class="loader" style="display: none;">
+        <div class="dl">
+            <div class="dl__container">
+                <div class="dl__corner--top"></div>
+                <div class="dl__corner--bottom"></div>
+            </div>
+            <div class="dl__square"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+            <div class="container">
+                <a class="navbar-brand" href="http://skynet.pulsedigitalagency.com/"><img src="./SkyNet_files/logo.png" alt="logo"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <div class="collapse navbar-collapse" id="MainNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://skynet.pulsedigitalagency.com/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://skynet.pulsedigitalagency.com/#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://skynet.pulsedigitalagency.com/#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://skynet.pulsedigitalagency.com/">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://skynet.pulsedigitalagency.com/#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://skynet.pulsedigitalagency.com/#contact">Contact Us</a>
+                        </li>
+                        
+                        <li class="nav-item select-container">
+                            <div class="btn-group bootstrap-select fit-width"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" aria-labelledby="undefined" title="EN"><span class="filter-option pull-left"><span class="flag-icon flag-icon-gb"></span> EN</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="flag-icon flag-icon-gb"></span> EN<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-cn"></span> CN<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-fr"></span> FR<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-de"></span> DE<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-in"></span> IN<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-jp"></span> JP<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-kr"></span> KR<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-pt"></span> PT<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-ru"></span> RU<span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="flag-icon flag-icon-es"></span> ES<span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select class="selectpicker" data-width="fit" onchange="location = this.value" tabindex="-98">
+                                <option selected="" value="/" data-content="&lt;span class=&quot;flag-icon flag-icon-gb&quot;&gt;&lt;/span&gt; EN">EN</option>
+                                <option value="/cn" data-content="&lt;span class=&quot;flag-icon flag-icon-cn&quot;&gt;&lt;/span&gt; CN">CN</option>
+                                <option value="/fr" data-content="&lt;span class=&quot;flag-icon flag-icon-fr&quot;&gt;&lt;/span&gt; FR">FR</option>
+                                <option value="/de" data-content="&lt;span class=&quot;flag-icon flag-icon-de&quot;&gt;&lt;/span&gt; DE">DE</option>
+                                <option value="/hi" data-content="&lt;span class=&quot;flag-icon flag-icon-in&quot;&gt;&lt;/span&gt; IN">HI</option>
+                                <option value="/jp" data-content="&lt;span class=&quot;flag-icon flag-icon-jp&quot;&gt;&lt;/span&gt; JP">JP</option>
+                                <option value="/kr" data-content="&lt;span class=&quot;flag-icon flag-icon-kr&quot;&gt;&lt;/span&gt; KR">KR</option>
+                                <option value="/pt" data-content="&lt;span class=&quot;flag-icon flag-icon-pt&quot;&gt;&lt;/span&gt; PT">PT</option>
+                                <option value="/ru" data-content="&lt;span class=&quot;flag-icon flag-icon-ru&quot;&gt;&lt;/span&gt; RU">RU</option>
+                                <option value="/es" data-content="&lt;span class=&quot;flag-icon flag-icon-es&quot;&gt;&lt;/span&gt; ES">ES</option>
+                            </select></div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <video autoplay="" id="myVideo">
+            <source src="/video/video.mp4" type="video/mp4">
+            <source src="/video/video.webm" type="video/webm">
+            <p>This browser does not support the video element.</p>
+        </video>
+    </header>
+    <section class="intro_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row wow bounceInDown" style="visibility: hidden; animation-name: none;">
+                        <div class="col-12 col-sm-6">
+                            <h2>Let's invest in our future</h2>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a href="http://skynet.pulsedigitalagency.com/#" class="btn_blue" data-toggle="modal" data-target="#myModal1">Sign Up for Whitelist <img src="./SkyNet_files/small_arrow.png" alt="#"></a>
+                        </div>
+                    </div>
+                    <!--<div class="row">
+                        <div class="col-12 col-sm-3">
+                            <div class="logo_box wow fadeInLeft" data-wow-delay="1s">
+                                <img src="~/images/points.png" alt="points" class="point">
+                                <img src="~/images/logo_1.png" alt="logo_1" class="logo_1">
+                                <img src="~/images/rating.png" align="rating" class="rating">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <div class="logo_box wow fadeInLeft" data-wow-delay="1.5s">
+                                <img src="~/images/points.png" alt="points" class="point">
+                                <img src="~/images/logo_2.png" alt="logo_2" class="logo_2">
+                                <img src="~/images/rating.png" align="rating" class="rating">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <div class="logo_box wow fadeInLeft" data-wow-delay="2s">
+                                <img src="~/images/points.png" alt="points" class="point">
+                                <img src="~/images/logo_3.png" alt="logo_3" class="logo_3">
+                                <img src="~/images/rating.png" align="rating" class="rating">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <div class="logo_box wow fadeInLeft" data-wow-delay="2.5s">
+                                <img src="~/images/points.png" alt="points" class="point">
+                                <img src="~/images/logo_4.png" alt="logo_4" class="logo_4">
+                                <img src="~/images/rating.png" align="rating" class="rating">
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video_section" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 padding_0">
+                    <div class="video_box">
+                        <span>
+                            
+                            <button id="play-button" class="video-play-button video-btn" data-toggle="modal" data-target="#video1">
+                                <span></span>
+                            </button>
+                        </span>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <section class="provide_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 wow slideInLeft" style="visibility: hidden; animation-name: none;">
+                    <h2>
+                        You can do lots of things
+                        <br>with
+                        <span>SkyNet</span> as we provide
+                    </h2>
+                    <p>
+                        The utility of SkyNet is to provide a decentralized
+                        funding platform, connecting its users and acting as
+                        a conduit between the cryptosphere and fiat currency.
+                    </p>
+                    <ul>
+                        <li>
+                            <img src="./SkyNet_files/check_icon.png" alt="#">Borrow fiat by collateralizing crypto
+                        </li>
+                        <li>
+                            <img src="./SkyNet_files/check_icon.png" alt="#">Lend fiat at higher rate of interest
+                        </li>
+                        <li>
+                            <img src="./SkyNet_files/check_icon.png" alt="#">Customize your loans
+                        </li>
+                        <li>
+                            <img src="./SkyNet_files/check_icon.png" alt="#">No middleman required
+                        </li>
+                        <li>
+                            <img src="./SkyNet_files/check_icon.png" alt="#">No credit check
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 wow slideInRight" style="visibility: hidden; animation-name: none;">
+                    <img src="./SkyNet_files/ill-main.gif" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Why choose SkyNet?</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 wow flipInX" style="visibility: hidden; animation-name: none;">
+                            <img class="img-fluid" src="./SkyNet_files/11.svg" alt="#">
+                            <h4>Safe and secure</h4>
+                            <p>Built on financially secure blockchain Tezos.</p>
+                        </div>
+                        <div class="col-12 col-sm-4 wow flipInX" style="visibility: hidden; animation-name: none;">
+                            <img class="img-fluid" src="./SkyNet_files/22.svg" alt="#">
+                            <h4>Save on taxes</h4>
+                            <p>No taxes to be paid on borrowed money.</p>
+                        </div>
+                        <div class="col-12 col-sm-4 wow flipInX" style="visibility: hidden; animation-name: none;">
+                            <img class="img-fluid" src="./SkyNet_files/33.svg" alt="#">
+                            <h4>Risk-free funding</h4>
+                            <p>Fully collateralized and title owned loans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap_section desktop-sec" id="roadmap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Road to the future</h2>
+                    <div class="roadmap wow zoomInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="line"></div>
+                        <div class="owl-carousel owl-loaded">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1998px;"><div class="owl-item active" style="width: 222px;"><div class="box">
+                                <div class="activelinex"></div>
+                                <h5>2014</h5>
+                                <img src="./SkyNet_files/blue_circle.png" alt="#" class="blue_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p>Concept development</p>
+                            </div></div><div class="owl-item active" style="width: 222px;"><div class="box">
+                                <div class="activelinex"></div>
+                                <h5>2015</h5>
+                                <img src="./SkyNet_files/blue_circle.png" alt="#" class="blue_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p>Market research</p>
+                            </div></div><div class="owl-item active" style="width: 222px;"><div class="box">
+                                <div class="activelinex"></div>
+                                <h5>2016</h5>
+                                <img src="./SkyNet_files/blue_circle.png" alt="#" class="blue_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p>Capitalization</p>
+                            </div></div><div class="owl-item active" style="width: 222px;"><div class="box">
+                                <div class="activelinex"></div>
+                                <h5>2017</h5>
+                                <img src="./SkyNet_files/blue_circle.png" alt="#" class="blue_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p>Engage team</p>
+                            </div></div><div class="owl-item active" style="width: 222px;"><div class="box">
+                                <div class="activelinex"></div>
+                                <h5>2018</h5>
+                                <a href="http://skynet.pulsedigitalagency.com/#" class="circle"><img src="./SkyNet_files/green_circle.png" alt="#" class="green_circle"></a>
+                                <img src="./SkyNet_files/line.png" alt="#" class="down down-green-circle">
+                                <p>Prototype development</p>
+                                <ul>
+                                    <li>• Fiat funding</li>
+                                    <li>• Crypto funding</li>
+                                    <li>• Cross-chain funding</li>
+                                    <li>• Insurance</li>
+                                    <li>• Id3ntity (Key retrieval)</li>
+                                </ul>
+                            </div></div><div class="owl-item" style="width: 222px;"><div class="box">
+                                <h5>2019</h5>
+                                <img src="./SkyNet_files/grey_circle.png" alt="#" class="grey_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p class="grey_text">
+                                    Real estate based funding
+                                    <br>
+                                    Title transfer
+                                    <br>
+                                    Asset based funding
+                                </p>
+                            </div></div><div class="owl-item" style="width: 222px;"><div class="box">
+                                <h5>2020</h5>
+                                <img src="./SkyNet_files/grey_circle.png" alt="#" class="grey_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p class="grey_text">On platform liquidation</p>
+                            </div></div><div class="owl-item" style="width: 222px;"><div class="box">
+                                <h5>2021</h5>
+                                <img src="./SkyNet_files/grey_circle.png" alt="#" class="grey_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p class="grey_text">Remittance</p>
+                            </div></div><div class="owl-item" style="width: 222px;"><div class="box">
+                                <h5>2022</h5>
+                                <img src="./SkyNet_files/grey_circle.png" alt="#" class="grey_circle">
+                                <img src="./SkyNet_files/line.png" alt="#" class="down">
+                                <p class="grey_text">Online payment integration</p>
+                            </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><img src="./SkyNet_files/left.png" alt="#"></button><button type="button" role="presentation" class="owl-next"><img src="./SkyNet_files/right.png" alt="#"></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap_section mobile-sec" id="roadmap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Road to the future</h2>
+                    <div class="roadmap wow zoomInUp animated" style="visibility: visible;">
+                        <div class="owl-carousel owl-loaded">
+                            
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="timeline">
+                                <div class="box containerx containerxy leftx">
+                                    <div class="contentx">
+                                        <h2>2014</h2>
+                                        <h4>Concept development</h4>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxy rightx">
+                                    <div class="contentx">
+                                        <h2>2015</h2>
+                                        <h4>Market research</h4>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxy leftx">
+                                    <div class="contentx">
+                                        <h2>2016</h2>
+                                        <h4>Capitalization</h4>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxy rightx">
+
+                                    <div class="contentx">
+                                        <h2>2017</h2>
+                                        <h4>Engage team</h4>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxanim leftx">
+                                    <div class="contentx">
+                                        <a href="http://skynet.pulsedigitalagency.com/#" class="circle"><img src="./SkyNet_files/green_circle.png" alt="#" class="green_circle"></a>
+                                        <h2>2018</h2>
+                                        <h4 style="margin-bottom: 10px;">Prototype development</h4>
+                                        <ul>
+                                            <li>• Fiat funding</li>
+                                            <li>• Crypto funding</li>
+                                            <li>• Cross-chain funding</li>
+                                            <li>• Insurance</li>
+                                            <li>• Id3ntity (Key retrieval)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxyz rightx">
+                                    <div class="contentx">
+                                        <h2>2019</h2>
+                                        <h4 style="margin-bottom: 5px;">
+                                            Real estate based funding
+                                        </h4>
+                                        <h4 style="margin-bottom: 5px;">
+                                            Title transfer
+                                        </h4>
+                                        <h4 style="margin-bottom: 5px;">
+                                            Asset based funding
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxyz leftx">
+                                    <div class="contentx">
+                                        <h2>2020</h2>
+                                        <h4>On platform liquidation</h4>
+                                    </div>
+                                </div>
+                                <div class="box containerx containerxyz rightx">
+                                    <div class="contentx">
+                                        <h2>2021</h2>
+                                        <h4>Remittance</h4>
+                                    </div>
+                                </div>
+
+                                <div class="box containerx containerxyz leftx">
+                                    <div class="contentx">
+                                        <h2>2022</h2>
+                                        <h4>Online payment integration</h4>
+                                    </div>
+                                </div>
+
+                            </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><img src="./SkyNet_files/left.png" alt="#"></button><button type="button" role="presentation" class="owl-next disabled"><img src="./SkyNet_files/right.png" alt="#"></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="token_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Utilitarian Tokens</h2>
+                    <div class="row tokens-info-desktop">
+                        <div class="col-12 col-sm-4 wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                            <img src="./SkyNet_files/graph.png" alt="#" class="graph">
+                        </div>
+                        <div class="col-12 col-sm-4 wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                            <h3>Token distribution</h3>
+                            <h4>
+                                <img src="./SkyNet_files/b1.png" alt="#">
+                                <span>25%</span> Early contributors
+                                <span class="locker">
+                                    <span id="lock-icon" class="24months typcn typcn-lock-closed tooltipstered"></span>
+                                </span>
+                            </h4>
+                            <h4>
+                                <img src="./SkyNet_files/b2.png" alt="#">
+                                <span>35%</span> Public sale
+                            </h4>
+                            <h4>
+                                <img src="./SkyNet_files/b3.png" alt="#">
+                                <span>40%</span> SkyNet
+                            </h4>
+                            <ul>
+                                <li>• Developers</li>
+                                <li>• Marketing</li>
+                                <li>• Foundation</li>
+                                <li>• Advisors</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-4 wow fadeInRight" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/globe_icon.png" alt="globe" class="globe">
+                                <h3>Use of funds</h3>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Business development
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Software development
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Infrastructure development
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Employment
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b2.png" alt="#"> Marketing / Global expansion
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b2.png" alt="#"> Legal expenses
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b2.png" alt="#"> Misc. expenses
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tokens-info-mobile ">
+                        <div class="col-sm-12 d-flex align-items-center flex-column justify-content-center h-100" style="margin-bottom: 50px">
+                            <div>
+                                <h3>Token distribution</h3>
+                                <h4>
+                                    <img src="./SkyNet_files/b1.png" alt="#">
+                                    <span>25%</span> Early contributors
+                                    <span>
+                                        <span class="24months-mob typcn typcn-lock-closed tooltipstered"></span>
+                                    </span>
+                                </h4>
+                                <h4>
+                                    <img src="./SkyNet_files/b2.png" alt="#">
+                                    <span>35%</span> Public sale
+                                </h4>
+                                <h4>
+                                    <img src="./SkyNet_files/b3.png" alt="#">
+                                    <span>40%</span> SkyNet
+                                </h4>
+                                <ul>
+                                    <li>• Developers</li>
+                                    <li>• Marketing</li>
+                                    <li>• Foundation</li>
+                                    <li>• Advisors</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 d-flex align-items-center flex-column justify-content-center h-100">
+                            <div class="globe-box">
+                                <h3>Use of funds</h3>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Business development
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Software development
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Infrastructure development
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b1.png" alt="#"> Employment
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b2.png" alt="#"> Marketing / Global expansion
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b2.png" alt="#"> Legal expenses
+                                </p>
+                                <p>
+                                    <img src="./SkyNet_files/b2.png" alt="#"> Misc. expenses
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team_section" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Core Team</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/peter-meronek.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Peter Meronek</h4>
+                                <p>CEO</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.goodreads.com/author/show/7751375.P_S_Meronek" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/stephen-andrews.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Stephen Andrews</h4>
+                                <p>Lead Developer/CTO</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/stephen-andrews-170186bb" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/keith-glenn.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Keith Glenn</h4>
+                                <p>COO</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/keithglenn45" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/cat-sigma.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Catsigma</h4>
+                                <p>Senior Michelson Developer</p>
+                                <ul class="list-inline">
+                                    
+                                    <li class="list-inline-item">
+                                        <a href="https://twitter.com/catsigma" target="_blank"><img src="./SkyNet_files/team_2.png" alt="#"></a>
+                                        
+                                </li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/tejinder-sandhu.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Tejinder Sandhu</h4>
+                                <p>Managing Director</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/tejinder-sandhu-64699b96" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/nauman-iqbal.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Nauman Iqbal</h4>
+                                <p>Marketing Head</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/nauman-iqbal-883246a3" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/steve-austin.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Steve Austin</h4>
+                                <p>Advisor</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/steve-austin-2421181" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 wow zoomIn" style="visibility: hidden; animation-name: none;">
+                            <div class="box">
+                                <img src="./SkyNet_files/aizaz-zaheer.jpg" alt="#" class="team img-fluid rounded-circle">
+                                <h4>Aizaz Zaheer</h4>
+                                <p>Frontend Developer</p>
+                                <ul class="list-inline">
+                                    <!-- <li class="list-inline-item"><a href="#"><img src="images/team_1.png" alt="#"></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="images/team_2.png" alt="#"></a></li> -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/aizazzaheer" target="_blank"><img src="./SkyNet_files/team_3.png" alt="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="form_section" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Don’t miss out, stay updated</h2>
+                    <h4>Get notified about the details of the token sale</h4>
+                    <form class="ng-pristine ng-valid">
+                        <input type="text" name="email">
+                        <button class="soon btn_blue" type="button">Subscribe <img src="./SkyNet_files/small_arrow.png" alt="#"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="social-container">
+                        <ul class="list-inline social social-desktop">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/skynetworldorg" target="_blank"><img src="./SkyNet_files/fb.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/skynetworldorg" target="_blank"><img src="./SkyNet_files/gh.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://medium.com/@skynetworldorg" target="_blank"><img src="./SkyNet_files/md.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.reddit.com/user/skynetworld" target="_blank"><img src="./SkyNet_files/rd.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://t.me/skynetcommunity" target="_blank"><img src="./SkyNet_files/tg.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/skynetworldorg" target="_blank"><img src="./SkyNet_files/tw.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCpbKIYSTS0DOPkQqRrY_KBA" target="_blank"><img src="./SkyNet_files/yt.svg" alt="#"></a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline social social-mobile">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/skynetworldorg" target="_blank"><img src="./SkyNet_files/fb.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/skynetworldorg" target="_blank"><img src="./SkyNet_files/gh.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://medium.com/@skynetworldorg" target="_blank"><img src="./SkyNet_files/md.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.reddit.com/user/skynetworld" target="_blank"><img src="./SkyNet_files/rd.svg" alt="#"></a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline social social-mobile">
+                            <li class="list-inline-item">
+                                <a href="https://t.me/skynetcommunity" target="_blank"><img src="./SkyNet_files/tg.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/skynetworldorg" target="_blank"><img src="./SkyNet_files/tw.svg" alt="#"></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCpbKIYSTS0DOPkQqRrY_KBA" target="_blank"><img src="./SkyNet_files/yt.svg" alt="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <a href="http://skynet.pulsedigitalagency.com/#"><img src="./SkyNet_files/footer_logo.png" alt="#" class="logo"></a>
+                    <p>
+                        SkyNet connects funders and borrowers around the world running on the decentralized Tezos blockchain.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="http://skynet.pulsedigitalagency.com/#top" class="footer-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://skynet.pulsedigitalagency.com/#about" class="footer-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="http://skynet.pulsedigitalagency.com/#roadmap" class="footer-link">Roadmap</a>
+                        </li>
+                        <li>
+                            <a href="http://skynet.pulsedigitalagency.com/" class="footer-link">Whitepaper</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <ul class="footer-list">
+                        <li>
+                            <a class="soon" href="http://skynet.pulsedigitalagency.com/#">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="http://skynet.pulsedigitalagency.com/#team" class="footer-link">Team</a>
+                        </li>
+                        <!--<li>
+                            <a href="#">Careers</a>
+                        </li>-->
+                        <li>
+                            <a href="http://skynet.pulsedigitalagency.com/#contact" class="footer-link">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@skynetworld.org">info@skynetworld.org</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <ul class="contact">
+                        <li style="visibility: hidden;">
+                            <a href="http://skynet.pulsedigitalagency.com/#">
+                                321 B, Doe houes, Mine road,<br>
+                                Twin lakes, Ireland - 86212
+                            </a>
+                        </li>
+                        <li style="visibility: hidden;">
+                            <a href="http://skynet.pulsedigitalagency.com/#">+7 911 846 49 79</a>
+                        </li>
+                    </ul>
+                    <a class="soon" href="http://skynet.pulsedigitalagency.com/#"><img src="./SkyNet_files/apple.png" alt="#" class="apple"></a>
+                    <a class="soon" href="http://skynet.pulsedigitalagency.com/#"><img src="./SkyNet_files/google.png" alt="#" class="google"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="http://skynet.pulsedigitalagency.com/#top"><img src="./SkyNet_files/up.png" alt="#" class="up"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                © 2018 SkyNet Inc.
+                            </p>
+                        </div>
+                        <!--<div class="col-12 col-sm-6">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">FAQs</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">Try Skynet</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="video1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="./SkyNet_files/saved_resource.html" id="road1-modal-video" allowscriptaccess="always" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="MainController" class="modal fade ng-scope" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body form_body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div id="form-container" class="container">
+                        <h2>Sign Up For Whitelist</h2>
+                        <form id="userForm" name="userForm" ng-submit="submitForm()" novalidate="" class="ng-pristine ng-valid">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Name *" class="form-control ng-pristine ng-untouched ng-valid" ng-class="{ &#39;error&#39; : userForm.name.$invalid &amp;&amp; !userForm.name.$pristine }" ng-model="name" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email *" class="form-control ng-pristine ng-untouched ng-valid" ng-class="{ &#39;error&#39; : userForm.email.$invalid &amp;&amp; !userForm.email.$pristine }" ng-model="email" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="country" placeholder="Country *" class="form-control ng-pristine ng-untouched ng-valid" ng-class="{ &#39;error&#39; : userForm.country.$invalid &amp;&amp; !userForm.country.$pristine }" ng-model="country" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="contribution" placeholder="Approx. contribution in USD *" class="form-control ng-pristine ng-untouched ng-valid" ng-class="{ &#39;error&#39; : userForm.contribution.$invalid &amp;&amp; !userForm.contribution.$pristine }" ng-model="contribution" required="">
+                            </div>
+                            <button type="submit" class="btn_blue" ng-class="{&#39;btn_grey&#39;: userForm.$invalid}" ng-disabled="userForm.$invalid">Submit<img src="./SkyNet_files/small_arrow.png"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./SkyNet_files/jquery.js.download"></script>
+    <script src="./SkyNet_files/popper.min.js.download"></script>
+    <script src="./SkyNet_files/bootstrap.min.js.download"></script>
+    <script src="./SkyNet_files/angular.min.js.download"></script>
+
+    <script src="./SkyNet_files/scripts"></script>
+
+
+<script type="text/javascript">( function(){ window.SIG_EXT = {}; } )()</script></body></html>
