@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkyNet</title>
+    <link rel="shortcut icon" href="../images/ico.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/flag-icon.css">
+</head>
+
+<body>
+    <a href="https://t.me/skynetcommunity" target="_blank" class="fixed-telegram-icon">
+        <img src="../images/telegram.svg" alt="image">
+    </a>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="my-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">A propos de nous</a></li>
+                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#roadmap">Feuille de route</a></li>
+                    <li><a href="#team">L’équipe</a></li>
+                    <li><a href="mailto:info@skynetworld.org">Nous contacter</a></li>
+                    <li class="dropdown visible-md visible-lg hidden-xs hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-fr"></span> FR<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                            <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                            <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                            <li><a href="hi.html"><span class="flag-icon flag-icon-in"></span> HI</a></li>
+                            <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                            <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                            <li><a href="kr.html"><span class="flag-icon flag-icon-kr"></span> KR</a></li>
+                            <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                            <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                        </ul>
+                    </li>
+                    <li class="visible-xs visible-sm hidden-md hidden-lg">
+                        <a href="#" data-toggle="modal" data-target="#language-modal"><span class="flag-icon flag-icon-fr"></span>
+                            FR</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="hidden-xs black-transparent-layer"></div>
+        <video autoplay muted loop id="myVideo" preload="auto" class="hidden-xs">
+            <source src="../videos/video.mp4" type="video/mp4">
+            <source src="../videos/video.webm" type="video/webm">
+            <p>This browser does not support the video element.</p>
+        </video>
+        <img src="../images/main-header.png" alt="icon" class="hidden-sm hidden-md hidden-lg" id="main-header">
+        <div class="green-arrow">
+            <a href="https://app.skynetworld.org" target="_blank">Prototype &rarr; </a>
+        </div>
+        <a href="#about">
+            <img src="../images/dropper-icon.png" alt="icon" class="down-icon hidden-xs hidden-sm">
+        </a>
+        <img src="../images/white-overlay-video.png" alt="img" class="video-white-overlay hidden-xs">
+        <div class="video-overlay">
+            <div class="container">
+                <div class="col-md-7 overlay-container">
+                    <h1>Première grande plateforme de financement décentralisé peer to peer sur Tezos</h1>
+                    <img src="../images/white-line.png" alt="line" class="line">
+                    <div class="button-container">
+                        <a href="../documents/SkyNet-Whitepaper-FR.pdf" target="_blank" class="btn header-btn whitepaper-btn">Livret blanc
+                            <img src="../images/download-icon-top.png" alt="img" style="width: 15px; margin-left: 7px;"></a>
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank" class="btn header-btn signup-btn">S'inscrire au livre blanc &nbsp;&nbsp; &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center wow fadeIn" data-wow-duration="1s">Pourquoi choisir SkyNet?</h2>
+                <img src="../images/blue-line.png" alt="line" class="line">
+                <div class="margin-left">
+                    <div class="col-md-4 col-md-offset text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                        <img src="../images/11.svg" alt="img" class="choose-icon">
+                        <h3>Sûr et sécurisé</h3>
+                        <p>Construit sur une chaîne de <br /> sécurité financière sécurisée Tezos.</p>
+                    </div>
+                    <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="400ms">
+                        <img src="../images/22.svg" alt="img" class="choose-icon">
+                        <h3>Économies d'impôts</h3>
+                        <p>Aucun impôt à payer <br /> sur l'argent emprunté.</p>
+                    </div>
+                    <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                        <img src="../images/33.svg" alt="img" class="choose-icon">
+                        <h3>Financement sans risque</h3>
+                        <p>Prêts entièrement garantis <br /> et détenus à titre de propriété.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="participation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <h2 class="wow fadeIn" data-wow-duration="1s">Raisons de participer</h2>
+                    <ul id="reasons">
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Prototype de travail en cours
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Jetons investisseurs initiaux pour 1 an
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Jetons d'équipe acquis sur 2 ans
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Applications mobiles en cours
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Financement initial reçu
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">En conversation avec les partenaires fiat
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Premier Dapp majeur sur Tezos
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Entièrement décentralisé
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Développeurs à plein temps
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <img src="../images/laptop-and-phone.png" alt="img" class="img-responsive laptop-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="documents">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1.5s">Nos documents</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row document-margin-left">
+                <div class="col-md-3 document-hover wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/messagetotheworld.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>Message au monde</p>
+                            <a href="../documents/SkyNet-Manifesto-FR.pdf" target="_blank"><img src="../images/download-icon.png" alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 document-hover wow slideInUp" data-wow-duration="1s"
+                    data-wow-delay="500ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/whitepaper.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>Livre blanc</p>
+                            <small>Version 1.1</small><br>
+                            <a href="../documents/SkyNet-Whitepaper-FR.pdf" target="_blank"><img src="../images/download-icon.png" alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 document-hover wow slideInUp" data-wow-duration="1s"
+                    data-wow-delay="700ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/yellowpaper.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>Livre jaune</p>
+                            <small>Version 1.1</small><br>
+                            <a href=".../documents/SkyNet-Yellowpaper.pdf" target="_blank"><img src="../images/download-icon.png" alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="future-invest">
+        <h1 class="text-center wow fadeIn" data-wow duration='1s'>Investissons dans notre future</h1>
+        <a href="#" data-toggle="modal" data-target="#video-modal"><img src="../images/play-icon.png" alt="icon"></a>
+    </div>
+
+    <div id="skynet-utility">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <h3>L'utilité de SkyNet est de fournir une plate-forme de financement décentralisée, reliant ses 
+                        utilisateurs et servant de canal entre la cryptosphère et la monnaie fiduciaire.</h3>
+                    <ul class="skynet-utilities">
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Emprunter du fiat en garantissant le crypto
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Prêtez fiat fiat à un taux d'intérêt plus élevé
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Personnalisez vos prêts
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Aucun intermédiaire requis
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Aucune vérification de crédit
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <img src="../images/ill-main.gif" alt="img" class="img-responsive ill-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="roadmap">
+        <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">Le chemin de l'avenir</h2>
+        <img src="../images/blue-line.png" alt="#" class="line">
+        <div id="road-map-desktop" class="hidden-xs hidden-sm">
+            <br><br><br>
+            <img src="../images/blue-line-map.png" alt="" style="width: 100%;">
+            <img src="../images/gray-line-map.png" alt="" style="width: 100%;">
+            <div class="row" style="margin-top: -565px; margin-bottom: 120px;">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2014</div>
+                    <p class="text-center map-txt-d">Élaboration du concept</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2015</div>
+                    <p class="text-center map-txt-d">Études de marché</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2016</div>
+                    <p class="text-center map-txt-d">Capitalisation</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2019</div>
+                    <p class="text-center map-txt-d">Financement immobilier</p>
+                    <ul class="map-ul-d">
+                        <li>Transfert de titres</li>
+                        <li>Financement reposant sur l'actif</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d1">2018</div>
+                    <p class="text-center map-txt-d">Développement de prototypes</p>
+                    <ul class="map-ul-d">
+                        <li>Financement Fiat</li>
+                        <li>Financement Crypto</li>
+                        <li>Financement inter-chaînes</li>
+                        <li>Assurance</li>
+                        <li>Identité (récupération des clés)</li>
+                        <li>Sur la plateforme Liquidité NET</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2017</div>
+                    <p class="text-center map-txt-d">Engager l'équipe</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2020</div>
+                    <p class="text-center map-txt-d">Liquidation sur plate-forme</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2021</div>
+                    <p class="text-center map-txt-d">Remise de fonds</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2022</div>
+                    <p class="text-center map-txt-d">Intégration des paiements en ligne</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-version" class="hidden-md hidden-lg">
+            <br><br><br>
+            <img src="../images/blue-line-ver.png" alt="line" class="map-lines-mobile" style="height: 710px;">
+            <img src="../images/gray-line-ver.png" alt="line" class="map-lines-mobile" style="height: 750px;">
+            <div class="row mobile-row" style="margin-top: -1410px;">
+                <div class="col-xs-5">
+                    <div class="circle-d">2014</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Élaboration du concept</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2015</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Études de marché</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2016</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Capitalisation</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2017</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Engager l'équipe</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d1">2018</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d">Développement de prototypes</p>
+                    <ul class="map-ul-m">
+                        <li>Financement Fiat</li>
+                        <li>Financement Crypto</li>
+                        <li>Financement inter-chaînes</li>
+                        <li>Assurance</li>
+                        <li>Identité (récupération des clés)</li>
+                        <li>Sur la plateforme Liquidité NET</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2019</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d">Financement immobilier</p>
+                    <ul class="map-ul-m">
+                        <li>Transfert de titres</li>
+                        <li>Financement reposant sur l'actif</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2020</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Liquidation sur plate-forme</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2021</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Remise de fonds</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2022</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">Intégration des paiements en ligne</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tokens">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s">Jetons utilitaires</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row token-margin-left">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="300ms">
+                    <canvas id="mycanvas" width="256" height="256"></canvas>
+                </div>
+                <div class="col-md-3 wow fadeIn token-section" data-wow-duration="1s" data-wow-delay="500ms">
+                    <div>
+                            <h4>Distribution de jetons</h4>
+                            <p>
+                                <img src="../images/11.png" alt="#" class="list-type-img">
+                                <span>35%</span> Vente publique
+                            </p>
+                            <p>
+                                <img src="../images/22.png" alt="#" class="list-type-img">
+                                <span>25%</span> Cotisants précoces
+                                <span class="ec-lock-container" data-toggle="tooltip" data-placement="right" title="Investi pendant 12 mois par ICO">
+                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                                </span>
+                            </p>
+                            <p>
+                                <img src="../images/33.png" alt="#" class="list-type-img">
+                                <span>15%</span> Coffre-fort privé
+                                <span class="ps-lock-container" data-toggle="tooltip" data-placement="right" title="Investi pendant 18 mois par ICO">
+                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                                </span>
+                            </p>
+                            <p>
+                                <img src="../images/44.png" alt="#" class="list-type-img">
+                                <span>15%</span> Équipe
+                                <span class="t-lock-container" data-toggle="tooltip" data-placement="right" title="Voté depuis 24 mois par ICO">
+                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                                </span>
+                            </p>
+                            <p>
+                                <img src="../images/55.png" alt="#" class="list-type-img">
+                                <span>10%</span> Fondateurs
+                                <span class="f-lock-container" data-toggle="tooltip" data-placement="right" title="Voté depuis 24 mois par ICO">
+                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                                </span>
+                            </p>
+                    </div>
+                </div>
+                <div class="col-md-3 fund-box wow fadeIn" data-wow-duration="1s" data-wow-delay="700ms">
+                    <h4 id="use-funds-heading">Utilisation des fonds</h4>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Développement des affaires
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Développement de logiciels
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Développement des infrastructures
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Emploi
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Marketing / Expansion mondiale
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Frais de contentieux
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> Dépenses diverses
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">Équipe centrale</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/peter.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">Peter Meronek</h4>
+                    <p class="team-design text-center">CEO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/stephen.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/stephen-andrews-170186bb" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Stephen Andrews</h4>
+                    <p class="team-design text-center">CTO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/tejinder.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/tejinder-sandhu-64699b96" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Tejinder Sandhu</h4>
+                    <p class="team-design text-center">COO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/nauman.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/nauman-iqbal-883246a3" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Nauman Iqbal</h4>
+                    <p class="team-design text-center">CMO</p>
+                </div>
+            </div>
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/catsigma.png" alt="photo" class="team-photo">
+                        <a href="https://twitter.com/catsigma" target="_blank" class="team-social-link">
+                            <img src="../images/twitter.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Catsigma</h4>
+                    <p class="team-design text-center">Développeur Michelson senior</p>
+                </div>
+               
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/william.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">William Lyman</h4>
+                    <p class="team-design text-center">Développeur</p>
+                </div>
+                <div class="col-md-3 team-member">
+                        <div class="team-head">
+                            <img src="../images/aizaz.png" alt="photo" class="team-photo">
+                            <a href="https://www.linkedin.com/in/aizazzaheer" target="_blank" class="team-social-link">
+                                <img src="../images/linkedin.png" alt="photo" class="social-image">
+                            </a> </div>
+                        <h4 class="team-name text-center">Aizaz Zaheer</h4>
+                        <p class="team-design text-center">Développeur</p>
+                    </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/mac.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/mac-yap-74a71348" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Mac Stevenson Yap</h4>
+                    <p class="team-design text-center">Concepteur</p>
+                </div>
+            </div>
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="700ms">
+               
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/steve.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/steve-austin-2421181" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Steve Austin</h4>
+                    <p class="team-design text-center">Conseiller</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/keith.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/keithglenn45" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Keith Glenn</h4>
+                    <p class="team-design text-center">Conseiller</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/stuarts.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">Stuarts Walker Hersant Humphries</h4>
+                    <p class="team-design text-center">Conseiller juridique</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-top">
+        <div id="footer-top-overlay">
+            <div class="container">
+                <h2 class="text-center">Ne manquez pas l'occasion de vous tenir au courant</h2>
+                <p class="text-center">Soyez informé des détails de la vente de jetons</p>
+                <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 25px;">
+                                <a id="footer-subscribe-button" href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank">S'abonner &rarr;</a>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 40px;">
+                        <a href="https://www.facebook.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/facebook-icon.png" alt="icon">
+                        </a>
+                       <!-- <a href="https://github.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="images/github-icon.png" alt="icon">
+                        </a> -->
+                        <a href="https://medium.com/@skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/medium-icon.png" alt="icon">
+                        </a>
+                        <a href="https://www.reddit.com/user/skynetworld" target="_blank" class="social-icons">
+                            <img src="../images/reddit-icon.png" alt="icon">
+                        </a>
+                        <a href="https://t.me/skynetcommunity" target="_blank" class="social-icons">
+                            <img src="../images/telegram-icon.png" alt="icon">
+                        </a>
+                        <a href="https://twitter.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/twitter-icon.png" alt="icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCpbKIYSTS0DOPkQqRrY_KBA" target="_blank" class="social-icons">
+                            <img src="../images/youtube-icon.png" alt="icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="row footer-info">
+                    <div class="col-md-4">
+                        <img src="../images/logo.png" alt="logo" class="img-responsive">
+                        <div class="logo-text">SkyNet relie les bailleurs de fonds et les emprunteurs du monde entier à la chaîne de blocs Tezos décentralisée.</div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#home">Accueil</a>
+                        <a href="#about">À propos de nous</a>
+                        <a href="#roadmap">Feuille de route</a>
+                        <a href="#documents">Documents</a>
+                        <a href="#team">L'équipe</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe" target="_blank">S'inscrire</a>
+                        <a href="../documents/termsandconditions.pdf" target="_blank">Termes et conditions</a>
+                        <a href="mailto:info@skynetworld.org">Nous contacter</a>
+                        <a href="mailto:info@skynetworld.org">info@skynetworld.org</a>
+                        <a href="mailto:media@skynetworld.org">media@skynetworld.org</a>
+                    </div>
+                    <div class="col-md-3 store-buttons">
+                        <a href="#"><img src="../images/app-store.png" alt="app-icon" class="img-responsive app"></a>
+                        <a href="#"><img src="../images/google-play.png" alt="app-icon" class="img-responsive app"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-bottom">
+        <p class="text-center">&copy; 2018 SkyNet Inc.</p>
+        <a href="#home">
+            <img src="../images/top.svg" alt="#">
+        </a>
+    </div>
+
+    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JSt8LxxINr8?autoplay=1&vq=highres&rel=0"
+                            id="road-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="language-modal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title text-center">Choisissez votre langue</h4>
+            </div>
+            <div class="modal-body">
+                <ul id="language-list">
+                    <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                    <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                    <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                    <li><a href="hi.html"><span class="flag-icon flag-icon-in"></span> HI</a></li>
+                    <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                    <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                    <li><a href="kr.html"><span class="flag-icon flag-icon-kr"></span> KR</a></li>
+                    <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                    <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../scripts/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ctx = $("#mycanvas").get(0).getContext("2d");
+
+            var data = [
+                {
+                    value: 35,
+                    color: "#1040A6",
+                    highlight: "#052C80",
+                    label: "Vente publique"
+                },
+                {
+                    value: 25,
+                    color: "#2B6FC2",
+                    highlight: "#134E96",
+                    label: "Cotisants précoces"
+                },
+                {
+                    value: 15,
+                    color: "#4698FC",
+                    highlight: "#2774D1",
+                    label: "Coffre-fort privé"
+                },
+                {
+                    value: 15,
+                    color: "#5EBCFF",
+                    highlight: "#2694E3",
+                    label: "Équipe"
+                },
+                {
+                    value: 10,
+                    color: "#5ED7FF",
+                    highlight: "#1BBCF2",
+                    label: "Fondateurs"
+                }
+            ];
+
+            var chart = new Chart(ctx).Doughnut(data);
+        });
+    </script>
+</body>
+
+</html>

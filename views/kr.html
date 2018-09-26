@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkyNet</title>
+    <link rel="shortcut icon" href="../images/ico.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/flag-icon.css">
+</head>
+
+<body>
+    <a href="https://t.me/skynetcommunity" target="_blank" class="fixed-telegram-icon">
+        <img src="../images/telegram.svg" alt="image">
+    </a>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="my-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#documents">문서</a></li>
+                    <li><a href="#roadmap">로드맵</a></li>
+                    <li><a href="#team">팀</a></li>
+                    <li><a href="mailto:info@skynetworld.org">문의하기</a></li>
+                    <li class="dropdown visible-md visible-lg hidden-xs hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-kr"></span>
+                            KR<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                            <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                            <li><a href="fr.html"><span class="flag-icon flag-icon-fr"></span> FR</a></li>
+                            <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                            <li><a href="hi.html"><span class="flag-icon flag-icon-in"></span> HI</a></li>
+                            <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                            <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                            <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                            <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                        </ul>
+                    </li>
+                    <li class="visible-xs visible-sm hidden-md hidden-lg">
+                        <a href="#" data-toggle="modal" data-target="#language-modal"><span class="flag-icon flag-icon-kr"></span>
+                            KR</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="hidden-xs black-transparent-layer"></div>
+        <video autoplay muted loop id="myVideo" preload="auto" class="hidden-xs">
+            <source src="../videos/video.mp4" type="video/mp4">
+            <source src="../videos/video.webm" type="video/webm">
+            <p>This browser does not support the video element.</p>
+        </video>
+        <img src="../images/main-header.png" alt="icon" class="hidden-sm hidden-md hidden-lg" id="main-header">
+        <div class="green-arrow">
+            <a href="https://app.skynetworld.org" target="_blank">프로토터압 &rarr; </a>
+        </div>
+        <a href="#about">
+            <img src="../images/dropper-icon.png" alt="icon" class="down-icon hidden-xs hidden-sm">
+        </a>
+        <img src="../images/white-overlay-video.png" alt="img" class="video-white-overlay hidden-xs">
+        <div class="video-overlay">
+            <div class="container">
+                <div class="col-md-7 overlay-container">
+                    <h1>Tezos의 첫 번째 주요 분산형 등위 지급 지원 플랫폼</h1>
+                    <img src="../images/white-line.png" alt="line" class="line">
+                    <div class="button-container">
+                        <a href="../documents/SkyNet-Whitepaper-KR.pdf" target="_blank" class="btn header-btn whitepaper-btn">백서
+                            <img src="../images/download-icon-top.png" alt="img" style="width: 15px; margin-left: 7px;"></a>
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank" class="btn header-btn signup-btn">백서 가입 &nbsp;&nbsp;
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center wow fadeIn" data-wow-duration="1s">왜 스카이넷을 선택해야 하나요?</h2>
+                <img src="../images/blue-line.png" alt="line" class="line">
+                <div class="margin-left">
+                    <div class="col-md-4 col-md-offset text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                        <img src="../images/11.svg" alt="img" class="choose-icon">
+                        <h3>안전</h3>
+                        <p>Tezos 블록체인을 이용한 재정적으로 안전한 기반입니다.</p>
+                    </div>
+                    <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="400ms">
+                        <img src="../images/22.svg" alt="img" class="choose-icon">
+                        <h3>세금 절약</h3>
+                        <p>차용금에는 세금 부과가 안됩니다.</p>
+                    </div>
+                    <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                        <img src="../images/33.svg" alt="img" class="choose-icon">
+                        <h3>무위험 기금</h3>
+                        <p>완전 담보 대출 그리고 소유권 대출이 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="participation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <h2 class="wow fadeIn" data-wow-duration="1s">참여 이유</h2>
+                    <ul id="reasons">
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">진행 중인 작업 프로토타입
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">1년 동안 초기 투자 토큰 유지
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">2년 동안 팀 토큰 소유 확정
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">모바일 어플리케이션 진행중
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">초기 자금 수령
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">명목 파트너와 대화 가능
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Tezos에서 최초 주요 분산 어플리케이션
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">완전히 분권화 됨
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">풀타임 개발자
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <img src="../images/laptop-and-phone.png" alt="img" class="img-responsive laptop-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="documents">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1.5s">문서</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row document-margin-left">
+                <div class="col-md-3 document-hover wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/messagetotheworld.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>세계에 전하는 메시지</p>
+                            <a href="../documents/SkyNet-Manifesto-KR.pdf" target="_blank"><img src="../images/download-icon.png"
+                                    alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 document-hover wow slideInUp" data-wow-duration="1s"
+                    data-wow-delay="500ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/whitepaper.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>백서</p>
+                            <small>Version 1.1</small><br>
+                            <a href="../documents/SkyNet-Whitepaper-KR.pdf" target="_blank"><img src="../images/download-icon.png"
+                                    alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 document-hover wow slideInUp" data-wow-duration="1s"
+                    data-wow-delay="700ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/yellowpaper.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>황서</p>
+                            <small>Version 1.1</small><br>
+                            <a href=".../documents/SkyNet-Yellowpaper.pdf" target="_blank"><img src="../images/download-icon.png"
+                                    alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="future-invest">
+        <h1 class="text-center wow fadeIn" data-wow duration='1s'>미래를 위해 투자하기</h1>
+        <a href="#" data-toggle="modal" data-target="#video-modal"><img src="../images/play-icon.png" alt="icon"></a>
+    </div>
+
+    <div id="skynet-utility">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <h3>SkyNet의 유틸리티는 분산형 자금 플랫폼을 제공하여 
+                        사용자를 연결하고 암호화와 명목 통화간의 통로 역할을 합니다.</h3>
+                    <ul class="skynet-utilities">
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">담보 암호화에 의한 명목 빌리기
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">높은 이자율로 명목 임대
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">대출금 사용자 지정
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">필요한 중개인 없음
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">신용조회 안 함 
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <img src="../images/ill-main.gif" alt="img" class="img-responsive ill-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="roadmap">
+        <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">미래로 가는길</h2>
+        <img src="../images/blue-line.png" alt="#" class="line">
+        <div id="road-map-desktop" class="hidden-xs hidden-sm">
+            <br><br><br>
+            <img src="../images/blue-line-map.png" alt="" style="width: 100%;">
+            <img src="../images/gray-line-map.png" alt="" style="width: 100%;">
+            <div class="row" style="margin-top: -565px; margin-bottom: 120px;">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2014</div>
+                    <p class="text-center map-txt-d">콘셉트 발전</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2015</div>
+                    <p class="text-center map-txt-d">마켓 리서치</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2016</div>
+                    <p class="text-center map-txt-d">자금화</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2019</div>
+                    <p class="text-center map-txt-d">부동산 기반 자금</p>
+                    <ul class="map-ul-d">
+                        <li>명의 이전</li>
+                        <li>자신 기반 기금</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d1">2018</div>
+                    <p class="text-center map-txt-d">프로토타입 발전</p>
+                    <ul class="map-ul-d">
+                        <li>명목 자금</li>
+                        <li>암호화 자금</li>
+                        <li>연쇄-교차 자금</li>
+                        <li>보험</li>
+                        <li>신원 (키 검색)</li>
+                        <li>플랫폼에 순 유동성</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2017</div>
+                    <p class="text-center map-txt-d">팀 참여</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2020</div>
+                    <p class="text-center map-txt-d">플랫폼 사용</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2021</div>
+                    <p class="text-center map-txt-d">송금</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2022</div>
+                    <p class="text-center map-txt-d">온라인 결제 통합</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-version" class="hidden-md hidden-lg">
+            <br><br><br>
+            <img src="../images/blue-line-ver.png" alt="line" class="map-lines-mobile" style="height: 710px;">
+            <img src="../images/gray-line-ver.png" alt="line" class="map-lines-mobile" style="height: 750px;">
+            <div class="row mobile-row" style="margin-top: -1410px;">
+                <div class="col-xs-5">
+                    <div class="circle-d">2014</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">콘셉트 발전</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2015</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">마켓 리서치</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2016</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">마켓 리서치</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2017</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">팀 참여</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d1">2018</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d">프로토타입 발전</p>
+                    <ul class="map-ul-m">
+                        <li>명목 자금 </li>
+                        <li>암호화 자금 </li>
+                        <li>연쇄-교차 자금 </li>
+                        <li>보험 </li>
+                        <li>신원 (키 검색)</li>
+                        <li>플랫폼에 순 유동성 </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2019</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d">부동산 기반 자금</p>
+                    <ul class="map-ul-m">
+                        <li>명의 이전</li>
+                        <li>자신 기반 기금</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2020</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">플랫폼 사용</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2021</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">송금</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2022</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">온라인 결제 통합</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tokens">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s">실용적인 토큰</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row token-margin-left">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="300ms">
+                    <canvas id="mycanvas" width="256" height="256"></canvas>
+                </div>
+                <div class="col-md-3 wow fadeIn token-section" data-wow-duration="1s" data-wow-delay="500ms">
+                    <div>
+                        <h4>토큰 분배</h4>
+                        <p>
+                            <img src="../images/11.png" alt="#" class="list-type-img">
+                            <span>35%</span> 공매
+                        </p>
+                        <p>
+                            <img src="../images/22.png" alt="#" class="list-type-img">
+                            <span>25%</span> 초기 기여자
+                            <span class="ec-lock-container" data-toggle="tooltip" data-placement="right" title="ICO로부터 12 개월 동안 투자">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/33.png" alt="#" class="list-type-img">
+                            <span>15%</span> 개인 판매
+                            <span class="ps-lock-container" data-toggle="tooltip" data-placement="right" title="ICO로부터 18 개월 동안 투자">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/44.png" alt="#" class="list-type-img">
+                            <span>15%</span> 팀
+                            <span class="t-lock-container" data-toggle="tooltip" data-placement="right" title="ICO로부터 24 개월 동안 유예 됨">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/55.png" alt="#" class="list-type-img">
+                            <span>10%</span> 창립자
+                            <span class="f-lock-container" data-toggle="tooltip" data-placement="right" title="ICO로부터 24 개월 동안 유예 됨">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 fund-box wow fadeIn" data-wow-duration="1s" data-wow-delay="700ms">
+                    <h4 id="use-funds-heading">자금 사용</h4>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 비즈니스 개발
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 소프트웨어 개발
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 인프라 개발
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 고용
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 마케팅/ 글로벌 확장
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 법률 예산
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> 기타 예산
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">주요 팀 멤버</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/peter.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">Peter Meronek</h4>
+                    <p class="team-design text-center">CEO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/stephen.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/stephen-andrews-170186bb" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Stephen Andrews</h4>
+                    <p class="team-design text-center">CTO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/tejinder.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/tejinder-sandhu-64699b96" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Tejinder Sandhu</h4>
+                    <p class="team-design text-center">COO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/nauman.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/nauman-iqbal-883246a3" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Nauman Iqbal</h4>
+                    <p class="team-design text-center">CMO</p>
+                </div>
+            </div>
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/catsigma.png" alt="photo" class="team-photo">
+                        <a href="https://twitter.com/catsigma" target="_blank" class="team-social-link">
+                            <img src="../images/twitter.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Catsigma</h4>
+                    <p class="team-design text-center">마이클슨 선임 개발자</p>
+                </div>
+               
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/william.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">William Lyman</h4>
+                    <p class="team-design text-center">개발자</p>
+                </div>
+                <div class="col-md-3 team-member">
+                        <div class="team-head">
+                            <img src="../images/aizaz.png" alt="photo" class="team-photo">
+                            <a href="https://www.linkedin.com/in/aizazzaheer" target="_blank" class="team-social-link">
+                                <img src="../images/linkedin.png" alt="photo" class="social-image">
+                            </a> </div>
+                        <h4 class="team-name text-center">Aizaz Zaheer</h4>
+                        <p class="team-design text-center">개발자</p>
+                    </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/mac.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/mac-yap-74a71348" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Mac Stevenson Yap</h4>
+                    <p class="team-design text-center">디자이너</p>
+                </div>
+            </div>
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="700ms">
+               
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/steve.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/steve-austin-2421181" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Steve Austin</h4>
+                    <p class="team-design text-center">고문</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/keith.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/keithglenn45" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Keith Glenn</h4>
+                    <p class="team-design text-center">고문</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/stuarts.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">Stuarts Walker Hersant Humphries</h4>
+                    <p class="team-design text-center">법률 고문</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-top">
+        <div id="footer-top-overlay">
+            <div class="container">
+                <h2 class="text-center">놓치지 말고, 계속 새로운 소식을 받아보세요</h2>
+                <p class="text-center">토큰 판매에 대한 세부 정보 알림 받기</p>
+                <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 25px;">
+                                <a id="footer-subscribe-button" href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                        target="_blank">구독 &rarr;</a>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 40px;">
+                        <a href="https://www.facebook.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/facebook-icon.png" alt="icon">
+                        </a>
+                       <!-- <a href="https://github.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="images/github-icon.png" alt="icon">
+                        </a> -->
+                        <a href="https://medium.com/@skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/medium-icon.png" alt="icon">
+                        </a>
+                        <a href="https://www.reddit.com/user/skynetworld" target="_blank" class="social-icons">
+                            <img src="../images/reddit-icon.png" alt="icon">
+                        </a>
+                        <a href="https://t.me/skynetcommunity" target="_blank" class="social-icons">
+                            <img src="../images/telegram-icon.png" alt="icon">
+                        </a>
+                        <a href="https://twitter.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/twitter-icon.png" alt="icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCpbKIYSTS0DOPkQqRrY_KBA" target="_blank" class="social-icons">
+                            <img src="../images/youtube-icon.png" alt="icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="row footer-info">
+                    <div class="col-md-4">
+                        <img src="../images/logo.png" alt="logo" class="img-responsive">
+                        <div class="logo-text">스카이넷은 전 세계에 분산형 Tezos 블록체인을 
+                            사용하여 자금 제공자와 대출자를 연결합니다.</div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#home">홈</a>
+                        <a href="#about">소개</a>
+                        <a href="#roadmap">로드맵</a>
+                        <a href="#documents">문서</a>
+                        <a href="#team">팀</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank">회원가입</a>
+                            <a href="../documents/termsandconditions.pdf" target="_blank">약관</a>
+                        <a href="mailto:info@skynetworld.org">문의하기</a>
+                        <a href="mailto:info@skynetworld.org">info@skynetworld.org</a>
+                        <a href="mailto:media@skynetworld.org">media@skynetworld.org</a>
+                    </div>
+                    <div class="col-md-3 store-buttons">
+                        <a href="#"><img src="../images/app-store.png" alt="app-icon" class="img-responsive app"></a>
+                        <a href="#"><img src="../images/google-play.png" alt="app-icon" class="img-responsive app"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-bottom">
+        <p class="text-center">&copy; 2018 SkyNet Inc.</p>
+        <a href="#home">
+            <img src="../images/top.svg" alt="#">
+        </a>
+    </div>
+
+    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Fdh2FYJnA7Q?autoplay=1&vq=highres&rel=0"
+                            id="road-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="language-modal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title text-center">당신의 언어를 고르시 오</h4>
+            </div>
+            <div class="modal-body">
+                <ul id="language-list">
+                    <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                    <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                    <li><a href="fr.html"><span class="flag-icon flag-icon-fr"></span> FR</a></li>
+                    <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                    <li><a href="hi.html"><span class="flag-icon flag-icon-in"></span> HI</a></li>
+                    <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                    <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                    <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                    <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../scripts/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ctx = $("#mycanvas").get(0).getContext("2d");
+
+            var data = [
+                {
+                    value: 35,
+                    color: "#1040A6",
+                    highlight: "#052C80",
+                    label: "공매"
+                },
+                {
+                    value: 25,
+                    color: "#2B6FC2",
+                    highlight: "#134E96",
+                    label: "초기 기여자"
+                },
+                {
+                    value: 15,
+                    color: "#4698FC",
+                    highlight: "#2774D1",
+                    label: "개인 판매"
+                },
+                {
+                    value: 15,
+                    color: "#5EBCFF",
+                    highlight: "#2694E3",
+                    label: "팀"
+                },
+                {
+                    value: 10,
+                    color: "#5ED7FF",
+                    highlight: "#1BBCF2",
+                    label: "창립자"
+                }
+            ];
+
+            var chart = new Chart(ctx).Doughnut(data);
+        });
+    </script>
+</body>
+
+</html>

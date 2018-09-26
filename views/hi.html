@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkyNet</title>
+    <link rel="shortcut icon" href="../images/ico.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/flag-icon.css">
+</head>
+
+<body>
+    <a href="https://t.me/skynetcommunity" target="_blank" class="fixed-telegram-icon">
+        <img src="../images/telegram.svg" alt="image">
+    </a>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="my-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">मुख्य पृष्ठ</a></li>
+                    <li><a href="#about">हमारे बारे में</a></li>
+                    <li><a href="#documents">दस्तावेज़</a></li>
+                    <li><a href="#roadmap">योजना</a></li>
+                    <li><a href="#team">टीम</a></li>
+                    <li><a href="mailto:info@skynetworld.org">हमें संपर्क करें</a></li>
+                    <li class="dropdown visible-md visible-lg hidden-xs hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-in"></span>
+                            HI<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                            <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                            <li><a href="fr.html"><span class="flag-icon flag-icon-fr"></span> FR</a></li>
+                            <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                            <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                            <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                            <li><a href="kr.html"><span class="flag-icon flag-icon-kr"></span> KR</a></li>
+                            <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                            <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                        </ul>
+                    </li>
+                    <li class="visible-xs visible-sm hidden-md hidden-lg">
+                        <a href="#" data-toggle="modal" data-target="#language-modal"><span class="flag-icon flag-icon-in"></span>
+                            HI</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="hidden-xs black-transparent-layer"></div>
+        <video autoplay muted loop id="myVideo" preload="auto" class="hidden-xs">
+            <source src="../videos/video.mp4" type="video/mp4">
+            <source src="../videos/video.webm" type="video/webm">
+            <p>This browser does not support the video element.</p>
+        </video>
+        <img src="../images/main-header.png" alt="icon" class="hidden-sm hidden-md hidden-lg" id="main-header">
+        <div class="green-arrow">
+            <a href="https://app.skynetworld.org" target="_blank">प्रोटोटाइप &rarr; </a>
+        </div>
+        <a href="#about">
+            <img src="../images/dropper-icon.png" alt="icon" class="down-icon hidden-xs hidden-sm">
+        </a>
+        <img src="../images/white-overlay-video.png" alt="img" class="video-white-overlay hidden-xs">
+        <div class="video-overlay">
+            <div class="container">
+                <div class="col-md-7 overlay-container">
+                    <h1>Tezos पर पहला प्रमुख विकेन्द्रीकृत पीयर टू पीयर निधिकरण प्लेटफॉर्म</h1>
+                    <img src="../images/white-line.png" alt="line" class="line">
+                    <div class="button-container">
+                        <a href="../documents/SkyNet-Whitepaper-IN.pdf" target="_blank" class="btn header-btn whitepaper-btn">श्वेतपत्र
+                            <img src="../images/download-icon-top.png" alt="img" style="width: 15px; margin-left: 7px;"></a>
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank" class="btn header-btn signup-btn">श्वेतसूची के लिए साइन अप करें
+                            &nbsp;&nbsp;
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center wow fadeIn" data-wow-duration="1s">SkyNet का चुनाव क्यों करें?</h2>
+                <img src="../images/blue-line.png" alt="line" class="line">
+                <div class="margin-left">
+                    <div class="col-md-4 col-md-offset text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                        <img src="../images/11.svg" alt="img" class="choose-icon">
+                        <h3>सुरक्षित</h3>
+                        <p>वित्तीय रूप से सुरक्षित <br /> ब्लॉकचेन टेज़ोस पर निर्मित.</p>
+                    </div>
+                    <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="400ms">
+                        <img src="../images/22.svg" alt="img" class="choose-icon">
+                        <h3>करों पर बचत</h3>
+                        <p>उधार लिए जाने वाले पैसे <br /> पर भुगतान के लिए कोई कर नहीं.</p>
+                    </div>
+                    <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                        <img src="../images/33.svg" alt="img" class="choose-icon">
+                        <h3>जोखिम-मुक्त ऋण देने की प्रक्रिया</h3>
+                        <p>पूर्ण रूप से जमानती और <br /> शीर्षक स्वामित्व वाले ऋण.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="participation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <h2 class="wow fadeIn" data-wow-duration="1s">हिस्सा लेने के कारण</h2>
+                    <ul id="reasons">
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">कार्यकारी प्रोटोटाइप प्रगति में है
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">प्रारंभिक निवेशकों के टोकन 1 साल के लिए बंद
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">टीम के टोकन 2 साल से ज्यादा के लिए निहित
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">मोबाइल एप्लीकेशन प्रगति में है
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">प्रारंभिक निधि प्राप्त हो गयी है
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">कागज़ी मुद्रा सहयोगियों से बातचीत
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">टेज़ोस पर पहला प्रमुख Dapp
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">पूरी तरह विकेन्द्रीकृत
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">फुल टाइम विकासक
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <img src="../images/laptop-and-phone.png" alt="img" class="img-responsive laptop-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="documents">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1.5s">हमारे दस्तावेज़</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row document-margin-left">
+                <div class="col-md-3 document-hover wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/messagetotheworld.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>दुनिया के लिए संदेश</p>
+                            <a href="../documents/SkyNet-Manifesto-IN.pdf" target="_blank"><img src="../images/download-icon.png"
+                                    alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 document-hover wow slideInUp" data-wow-duration="1s"
+                    data-wow-delay="500ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/whitepaper.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>श्वेतपत्र</p>
+                            <small>संस्करण 1.1</small><br>
+                            <a href="../documents/SkyNet-Whitepaper-IN.pdf" target="_blank"><img src="../images/download-icon.png"
+                                    alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 document-hover wow slideInUp" data-wow-duration="1s"
+                    data-wow-delay="700ms">
+                    <div class="row document-container">
+                        <div class="col-xs-6">
+                            <img src="../images/yellowpaper.png" alt="img" class="document-img">
+                        </div>
+                        <div class="col-xs-6"><br>
+                            <p>पीत पत्र</p>
+                            <small>संस्करण 1.1</small><br>
+                            <a href="../documents/SkyNet-Yellowpaper.pdf" target="_blank"><img src="../images/download-icon.png"
+                                    alt="icon" class="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="future-invest">
+        <h1 class="text-center wow fadeIn" data-wow duration='1s'>चलिए हम अपने भविष्य में निवेश करें</h1>
+        <a href="#" data-toggle="modal" data-target="#video-modal"><img src="../images/play-icon.png" alt="icon"></a>
+    </div>
+
+    <div id="skynet-utility">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <h3>अपने प्रयोगकर्ताओं को जोड़ने के लिए और क्रिप्टो परिवेश एवं कागज़ी मुद्रा के बीच
+                        माध्यम के रूप में काम करने के लिए SkyNet का उद्देश्य एक विकेन्द्रीकृत निधिकरण प्लेटफॉर्म प्रदान
+                        करना है।.</h3>
+                    <ul class="skynet-utilities">
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">क्रिप्टो को गिरवी रखकर कागज़ी मुद्रा उधार लें
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">उच्च ब्याज दर पर कागज़ी मुद्रा ऋण दें
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">अपने ऋण अनुकूलित करें
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">किसी मध्यस्थ की आवश्यकता नहीं
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">कोई क्रेडिट जांच नहीं
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <img src="../images/ill-main.gif" alt="img" class="img-responsive ill-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="roadmap">
+        <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">भविष्य का रास्ता</h2>
+        <img src="../images/blue-line.png" alt="#" class="line">
+        <div id="road-map-desktop" class="hidden-xs hidden-sm">
+            <br><br><br>
+            <img src="../images/blue-line-map.png" alt="" style="width: 100%;">
+            <img src="../images/gray-line-map.png" alt="" style="width: 100%;">
+            <div class="row" style="margin-top: -565px; margin-bottom: 120px;">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2014</div>
+                    <p class="text-center map-txt-d">सिद्धांत विकास</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2015</div>
+                    <p class="text-center map-txt-d">बाज़ार शोध</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2016</div>
+                    <p class="text-center map-txt-d">पूंजीकरण</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2019</div>
+                    <p class="text-center map-txt-d">अचल संपत्ति पर आधारित ऋण देना</p>
+                    <ul class="map-ul-d">
+                        <li>शीर्षक स्थानांतरण</li>
+                        <li>संपत्ति आधारित ऋण देना</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d1">2018</div>
+                    <p class="text-center map-txt-d">प्रोटोटाइप का विकास</p>
+                    <ul class="map-ul-d">
+                        <li>कागज़ी मुद्रा ऋण देना</li>
+                        <li>क्रिप्टो ऋण देना</li>
+                        <li>क्रॉस-चेन ऋण देना</li>
+                        <li>बीमा</li>
+                        <li>पहचान (कुंजी प्राप्ति)</li>
+                        <li>प्लेटफॉर्म पर शुद्ध नकदी</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d">2017</div>
+                    <p class="text-center map-txt-d">टीम का समावेश</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2020</div>
+                    <p class="text-center map-txt-d">प्लेटफॉर्म पर नकदी</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2021</div>
+                    <p class="text-center map-txt-d">भुगतान</p>
+                </div>
+                <div class="col-md-4 map-d1">
+                    <div class="circle-d2">2022</div>
+                    <p class="text-center map-txt-d">ऑनलाइन भुगतान संयोजन</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-version" class="hidden-md hidden-lg">
+            <br><br><br>
+            <img src="../images/blue-line-ver.png" alt="line" class="map-lines-mobile" style="height: 710px;">
+            <img src="../images/gray-line-ver.png" alt="line" class="map-lines-mobile" style="height: 750px;">
+            <div class="row mobile-row" style="margin-top: -1410px;">
+                <div class="col-xs-5">
+                    <div class="circle-d">2014</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">सिद्धांत विकास</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2015</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">बाज़ार शोध</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2016</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">पूंजीकरण</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d">2017</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">टीम का समावेश</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d1">2018</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d">प्रोटोटाइप का विकास</p>
+                    <ul class="map-ul-m">
+                        <li>कागज़ी मुद्रा ऋण देना</li>
+                        <li>क्रिप्टो ऋण देना</li>
+                        <li>क्रॉस-चेन ऋण देना</li>
+                        <li>बीमा</li>
+                        <li>पहचान (कुंजी प्राप्ति)</li>
+                        <li>प्लेटफॉर्म पर शुद्ध नकदी</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2019</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d">अचल संपत्ति पर आधारित ऋण देना</p>
+                    <ul class="map-ul-m">
+                        <li>शीर्षक स्थानांतरण</li>
+                        <li>संपत्ति आधारित ऋण देना</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2020</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">प्लेटफॉर्म पर नकदी</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2021</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">भुगतान</p>
+                </div>
+            </div>
+            <div class="row mobile-row">
+                <div class="col-xs-5">
+                    <div class="circle-d2">2022</div>
+                </div>
+                <div class="col-xs-7">
+                    <p class="map-txt-d map-margin-top-m">ऑनलाइन भुगतान संयोजन</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tokens">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s">उपयोगिता टोकन</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row token-margin-left">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="300ms">
+                    <canvas id="mycanvas" width="256" height="256"></canvas>
+                </div>
+                <div class="col-md-3 wow fadeIn token-section" data-wow-duration="1s" data-wow-delay="500ms">
+                    <div>
+                        <h4>टोकन वितरण</h4>
+                        <p>
+                            <img src="../images/11.png" alt="#" class="list-type-img">
+                            <span>35%</span> सार्वजनिक बिक्री
+                        </p>
+                        <p>
+                            <img src="../images/22.png" alt="#" class="list-type-img">
+                            <span>25%</span> प्रारंभिक योगदानकर्ता
+                            <span class="ec-lock-container" data-toggle="tooltip" data-placement="right" title="आईसीओ से 12 महीने के लिए निवेश किया">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/33.png" alt="#" class="list-type-img">
+                            <span>15%</span> निजी बिक्री
+                            <span class="ps-lock-container" data-toggle="tooltip" data-placement="right" title="आईसीओ से 18 महीने के लिए निवेश किया">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/44.png" alt="#" class="list-type-img">
+                            <span>15%</span> टीम
+                            <span class="t-lock-container" data-toggle="tooltip" data-placement="right" title="आईसीओ से 24 महीने के लिए निहित">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/55.png" alt="#" class="list-type-img">
+                            <span>10%</span> संस्थापक
+                            <span class="f-lock-container" data-toggle="tooltip" data-placement="right" title="आईसीओ से 24 महीने के लिए निहित">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 fund-box wow fadeIn" data-wow-duration="1s" data-wow-delay="700ms">
+                    <h4 id="use-funds-heading">निधि का प्रयोग</h4>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> व्यावसायिक विकास
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> सॉफ्टवेयर विकास
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> आधारिक संरचना विकास
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> रोजगार
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> मार्केटिंग / वैश्विक विस्तार
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> कानूनी व्यय
+                    </p>
+                    <p>
+                        <img src="../images/b1.png" alt="#" class="list-type-img"> विविध व्यय
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">मुख्य टीम</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/peter.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">Peter Meronek</h4>
+                    <p class="team-design text-center">CEO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/stephen.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/stephen-andrews-170186bb" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Stephen Andrews</h4>
+                    <p class="team-design text-center">CTO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/tejinder.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/tejinder-sandhu-64699b96" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Tejinder Sandhu</h4>
+                    <p class="team-design text-center">COO</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/nauman.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/nauman-iqbal-883246a3" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Nauman Iqbal</h4>
+                    <p class="team-design text-center">CMO</p>
+                </div>
+            </div>
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/catsigma.png" alt="photo" class="team-photo">
+                        <a href="https://twitter.com/catsigma" target="_blank" class="team-social-link">
+                            <img src="../images/twitter.png" alt="photo" class="social-image">
+                        </a>
+                    </div>
+                    <h4 class="team-name text-center">Catsigma</h4>
+                    <p class="team-design text-center">वरिष्ठ माइकलसन विकासक</p>
+                </div>
+              
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/william.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">William Lyman</h4>
+                    <p class="team-design text-center">विकासक</p>
+                </div>
+                <div class="col-md-3 team-member">
+                        <div class="team-head">
+                            <img src="../images/aizaz.png" alt="photo" class="team-photo">
+                            <a href="https://www.linkedin.com/in/aizazzaheer" target="_blank" class="team-social-link">
+                                <img src="../images/linkedin.png" alt="photo" class="social-image">
+                            </a> </div>
+                        <h4 class="team-name text-center">Aizaz Zaheer</h4>
+                        <p class="team-design text-center">विकासक</p>
+                    </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/mac.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/mac-yap-74a71348" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Mac Stevenson Yap</h4>
+                    <p class="team-design text-center">डिझाइनर</p>
+                </div>
+            </div>
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="700ms">
+               
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/steve.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/steve-austin-2421181" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Steve Austin</h4>
+                    <p class="team-design text-center">सलाहकार</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/keith.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/keithglenn45" target="_blank" class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a> </div>
+                    <h4 class="team-name text-center">Keith Glenn</h4>
+                    <p class="team-design text-center">सलाहकार</p>
+                </div>
+                <div class="col-md-3 team-member">
+                    <div class="team-head">
+                        <img src="../images/stuarts.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">Stuarts Walker Hersant Humphries</h4>
+                    <p class="team-design text-center">कानूनी सलाहकार</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-top">
+        <div id="footer-top-overlay">
+            <div class="container">
+                <h2 class="text-center">मौका ना गंवाएं और अपडेट रहें</h2>
+                <p class="text-center">टोकन बिक्री के विवरणों के बारे में सूचना पाएं</p>
+                <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 25px;">
+                                <a id="footer-subscribe-button" href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank">सब्सक्राइब &rarr;</a>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 40px;">
+                        <a href="https://www.facebook.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/facebook-icon.png" alt="icon">
+                        </a>
+                       <!-- <a href="https://github.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="images/github-icon.png" alt="icon">
+                        </a> -->
+                        <a href="https://medium.com/@skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/medium-icon.png" alt="icon">
+                        </a>
+                        <a href="https://www.reddit.com/user/skynetworld" target="_blank" class="social-icons">
+                            <img src="../images/reddit-icon.png" alt="icon">
+                        </a>
+                        <a href="https://t.me/skynetcommunity" target="_blank" class="social-icons">
+                            <img src="../images/telegram-icon.png" alt="icon">
+                        </a>
+                        <a href="https://twitter.com/skynetworldorg" target="_blank" class="social-icons">
+                            <img src="../images/twitter-icon.png" alt="icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCpbKIYSTS0DOPkQqRrY_KBA" target="_blank" class="social-icons">
+                            <img src="../images/youtube-icon.png" alt="icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="row footer-info">
+                    <div class="col-md-4">
+                        <img src="../images/logo.png" alt="logo" class="img-responsive">
+                        <div class="logo-text">SkyNet विकेन्द्रीकृत टेज़ोस ब्लॉकचेन पर संचालित होकर
+                            दुनिया भर के ऋण देने वालों और ऋण लेने वाले लोगों को आपस में जोड़ता है।.</div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#home">मुख्य पृष्ठ</a>
+                        <a href="#about">हमारे बारे में</a>
+                        <a href="#roadmap">योजना</a>
+                        <a href="#documents">नियम एवं शर्तें</a>
+                        <a href="#team">टीम</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank">साइन अप करें</a>
+                            <a href="../documents/termsandconditions.pdf" target="_blank">नियम एवं शर्तें</a>
+                        <a href="mailto:info@skynetworld.org">हमें संपर्क करें</a>
+                        <a href="mailto:info@skynetworld.org">info@skynetworld.org</a>
+                        <a href="mailto:media@skynetworld.org">media@skynetworld.org</a>
+                    </div>
+                    <div class="col-md-3 store-buttons">
+                        <a href="#"><img src="../images/app-store.png" alt="app-icon" class="img-responsive app"></a>
+                        <a href="#"><img src="../images/google-play.png" alt="app-icon" class="img-responsive app"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-bottom">
+        <p class="text-center">&copy; 2018 SkyNet Inc.</p>
+        <a href="#home">
+            <img src="../images/top.svg" alt="#">
+        </a>
+    </div>
+
+    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IrGnwfi8v58?autoplay=1&vq=highres&rel=0"
+                            id="road-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="language-modal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title text-center">अपनी भाषा चुनिए</h4>
+            </div>
+            <div class="modal-body">
+                <ul id="language-list">
+                    <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                    <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                    <li><a href="fr.html"><span class="flag-icon flag-icon-fr"></span> FR</a></li>
+                    <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                    <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                    <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                    <li><a href="kr.html"><span class="flag-icon flag-icon-kr"></span> KR</a></li>
+                    <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                    <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../scripts/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ctx = $("#mycanvas").get(0).getContext("2d");
+
+            var data = [
+                {
+                    value: 35,
+                    color: "#1040A6",
+                    highlight: "#052C80",
+                    label: "सार्वजनिक बिक्री"
+                },
+                {
+                    value: 25,
+                    color: "#2B6FC2",
+                    highlight: "#134E96",
+                    label: "प्रारंभिक योगदानकर्ता"
+                },
+                {
+                    value: 15,
+                    color: "#4698FC",
+                    highlight: "#2774D1",
+                    label: "निजी बिक्री"
+                },
+                {
+                    value: 15,
+                    color: "#5EBCFF",
+                    highlight: "#2694E3",
+                    label: "टीम"
+                },
+                {
+                    value: 10,
+                    color: "#5ED7FF",
+                    highlight: "#1BBCF2",
+                    label: "संस्थापक"
+                }
+            ];
+
+            var chart = new Chart(ctx).Doughnut(data);
+        });
+    </script>
+</body>
+
+</html>
