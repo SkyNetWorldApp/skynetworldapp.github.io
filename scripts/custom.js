@@ -18,6 +18,10 @@ $('#language-modal').on('show.bs.modal', function (e) {
     $('body').addClass('remove');
 });
 
+$('.nav a').click(function () {
+    $('.navbar-collapse').collapse('hide');
+});
+
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -82,4 +86,21 @@ $(document).ready(function () {
             });
         }
     });
+});
+
+$('.articles-slider').owlCarousel({
+    dots:true,
+    loop: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
 });
