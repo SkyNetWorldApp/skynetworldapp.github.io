@@ -65,12 +65,6 @@ $(document).ready(function () {
             $('.navbar').css({ 'background': 'transparent' });
         }
     });
-    if ($(this).scrollTop() > 60) {
-        $('.navbar').css('background', '#1860F0');
-    }
-    if ($(this).scrollTop() < 60) {
-        $('.navbar').css({ 'background': 'transparent' });
-    }
 
     $("a").on('click', function (event) {
 
@@ -89,18 +83,18 @@ $(document).ready(function () {
 });
 
 $('.articles-slider').owlCarousel({
-    dots:true,
-    loop: true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
+    dots: true,
+    loop: false,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1
         },
-        768:{
-            items:2
+        768: {
+            items: 2
         },
-        1200:{
-            items:3
+        1200: {
+            items: 3
         }
     }
 });
