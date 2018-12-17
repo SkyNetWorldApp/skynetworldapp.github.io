@@ -1184,3 +1184,26 @@ li.dropdown:hover > .dropdown-menu {
     transform: translate(-50%, 0);
     width: fit-content;
 }
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 99999;
+  }
+  
+  #status {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: -60px 0 0 -60px;
+  }
