@@ -1,3 +1,9 @@
+$(window).on('load', function() { 
+    $('#status').fadeOut();
+    $('#preloader').delay(500).fadeOut('slow');
+    $('body').delay(500).css({'overflow':'visible'});
+  })
+
 new WOW().init();
 
 var url = $("#road-modal-video").attr('src');
