@@ -1,4 +1,4 @@
-* {
+﻿* {
     transition: all ease .3s;
     -webkit-transition: all ease .3s;
     -moz-transition: all ease .3s;
@@ -256,11 +256,10 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .green-arrow {
-    display: none;
     position: absolute;
     right: 0;
     top: 80px;
-    padding: 7px 10px 10px 15px;
+    padding: 10px 15px 15px 25px;
     background-color: #33CC66;
     border-radius: 20px 0 0 20px;
     z-index: 10009;
