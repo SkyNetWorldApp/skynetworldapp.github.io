@@ -1,8 +1,15 @@
-$(window).on('load', function() { 
-    $('#status').fadeOut();
-    $('#preloader').delay(500).fadeOut('slow');
-    $('body').delay(500).css({'overflow':'visible'});
-  })
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") { // can also wait for "complete" here
+    vid = document.getElementById("video")
+    vid.setAttribute("src","videos/video.mp4")
+  }
+}
+
+// $(window).on('load', function() { 
+  // $('#status').fadeOut();
+  // $('#preloader').delay(500).fadeOut('slow');
+  // $('body').delay(500).css({'overflow':'visible'});
+// })
 
 new WOW().init();
 
