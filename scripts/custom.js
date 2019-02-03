@@ -1,5 +1,8 @@
 document.onreadystatechange = function () {
   if (document.readyState == "complete") { // can also wait for "complete" here
+    $('#status').fadeOut();
+    $('#preloader').delay(500).fadeOut('slow');
+    $('body').delay(500).css({'overflow':'visible'});
     vid = document.getElementById("videomp4")
     vid.setAttribute("src","videos/video.mp4")
     vid = document.getElementById("videowebm")
@@ -7,12 +10,6 @@ document.onreadystatechange = function () {
     document.getElementById("myVideo").load();
   }
 }
-
-$(window).on('load', function() { 
-  $('#status').fadeOut();
-  $('#preloader').delay(500).fadeOut('slow');
-  $('body').delay(500).css({'overflow':'visible'});
-})
 
 new WOW().init();
 
