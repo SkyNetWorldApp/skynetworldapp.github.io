@@ -204,7 +204,7 @@ li.dropdown:hover > .dropdown-menu {
     position: relative;
 }
 #home > video{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/main-header.jpg);
     background-size: cover;
 }
 .video-overlay {
@@ -481,7 +481,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 #future-invest {
-    background: url(../images/img-4-min.png) no-repeat center;
+    background: url(../images/img-4-min.jpg) no-repeat center;
     background-size: cover;
     padding: 200px 0;
     color: #FFFFFF;
