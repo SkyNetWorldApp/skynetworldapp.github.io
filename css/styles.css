@@ -203,7 +203,10 @@ li.dropdown:hover > .dropdown-menu {
     object-fit: cover;
     position: relative;
 }
-
+#home > video{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
 .video-overlay {
     position: absolute;
     top: 0;
