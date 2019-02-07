@@ -1,9 +1,9 @@
 document.onreadystatechange = function () {
   if (document.readyState == "complete") { // can also wait for "complete" here
     vid = document.getElementById("videomp4")
-    vid.setAttribute("src","videos/video.mp4")
+    vid.setAttribute("src","https://viaz.io/videos/video.mp4")
     vid = document.getElementById("videowebm")
-    vid.setAttribute("src","videos/video.webm")
+    vid.setAttribute("src","https://viaz.io/videos/video.webm")
     document.getElementById("myVideo").load();
   }
 }
