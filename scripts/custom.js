@@ -10,18 +10,30 @@ document.onreadystatechange = function () {
 
 new WOW().init();
 
-var url = $("#road-modal-video").attr('src');
+var prototypeUrl = $("#prototype-modal-video").attr('src');
+var explainerUrl = $("#explainer-modal-video").attr('src');
 
-$("#road-modal-video").attr('src', '');
+$("#prototype-modal-video").attr('src', '');
+$("#explainer-modal-video").attr('src', '');
 
-$('#video-modal').on('show.bs.modal', function (e) {
+$('#prototype-video-modal').on('show.bs.modal', function (e) {
     $('body').addClass('remove');
-    $("#road-modal-video").attr('src', url);
-    $("#road-modal-video").attr('allow', "autoplay");
+    $("#prototype-modal-video").attr('src', prototypeUrl);
+    $("#prototype-modal-video").attr('allow', "autoplay");
 });
 
-$("#video-modal").on('hide.bs.modal', function () {
-    $("#road-modal-video").attr('src', '');
+$('#explainer-video-modal').on('show.bs.modal', function (e) {
+    $('body').addClass('remove');
+    $("#explainer-modal-video").attr('src', explainerUrl);
+    $("#explainer-modal-video").attr('allow', "autoplay");
+});
+
+$("#prototype-video-modal").on('hide.bs.modal', function () {
+    $("#prototype-modal-video").attr('src', '');
+});
+
+$("#explainer-video-modal").on('hide.bs.modal', function () {
+    $("#explainer-modal-video").attr('src', '');
 });
 
 $('#language-modal').on('show.bs.modal', function (e) {

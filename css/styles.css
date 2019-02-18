@@ -480,16 +480,29 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
-#future-invest {
-    background: url(../images/img-4-min.jpg) no-repeat center;
-    background-size: cover;
-    padding: 200px 0;
-    color: #FFFFFF;
+#videos-section {
+    
 }
 
-#future-invest h1 {
+#explainer-video {
+    background: url(../images/explainer-video-poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#prototype-video {
+    background: url(../images/prototype-video-poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#videos-section h1 {
+    padding-top: 150px;
     font-size: 32px;
     font-weight: 700;
+    color: #FFFFFF;
 }
 
 @keyframes play-button-animation {
@@ -497,8 +510,8 @@ li.dropdown:hover > .dropdown-menu {
     to { transform: scale(1.1); }
 }
 
-#future-invest img {
-    width: 120px;
+ #videos-section .play-icon {
+    width: 90px;
     display: block;
     margin: auto;
     margin-top: 50px;
@@ -509,12 +522,14 @@ li.dropdown:hover > .dropdown-menu {
     z-index: 1000001 !important;
 }
 
-#video-modal .modal-dialog {
+#prototype-video-modal .modal-dialog,
+#explainer-video-modal .modal-dialog {
     max-width: 800px;
     margin: 30px auto;
 }
 
-#video-modal .close {
+#prototype-video-modal .close,
+#explainer-video-modal .close {
     position: absolute;
     right: 0;
     top: 0;
@@ -526,7 +541,8 @@ li.dropdown:hover > .dropdown-menu {
     text-shadow: none;
 }
 
-#video-modal .modal-content {
+#prototype-video-modal .modal-content,
+#explainer-video-modal .modal-content {
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -901,7 +917,6 @@ li.dropdown:hover > .dropdown-menu {
     }
 }
 
-
 #team {
     background: #EEF7FF;
     padding: 100px 0;
@@ -1198,7 +1213,7 @@ li.dropdown:hover > .dropdown-menu {
     z-index: 99999;
   }
   
-  #status {
+#status {
     width: 120px;
     height: 120px;
     position: absolute;
@@ -1210,3 +1225,8 @@ li.dropdown:hover > .dropdown-menu {
     background-size: cover;
     margin: -60px 0 0 -60px;
   }
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}

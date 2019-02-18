@@ -42,7 +42,7 @@
         <div id="status">&nbsp;</div>
     </div>
     <div class="fixed-telegram">
-        <a href="https://t.me/ViazOfficial" class="fixed-telegram-icon" target="_blank">Telegram</a>
+        <a href="https://t.me/ViazOfficialAnnouncements" class="fixed-telegram-icon" target="_blank">Telegram</a>
     </div>
     <nav class="navbar navbar-fixed-top">
         <div class="container">
@@ -239,9 +239,27 @@
         </div>
     </div>
 
-    <div id="future-invest">
-        <h1 class="text-center wow fadeIn" data-wow duration='1s'>Investissons dans notre future</h1>
-        <a href="#" data-toggle="modal" data-target="#video-modal"><img src="../images/play-icon.png" alt="icon"></a>
+    <div id="videos-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 no-padding">
+                    <div id="prototype-video">
+                        <h1 class="text-center wow fadeIn" data-wow="" duration="1s" style="visibility: visible; animation-name: fadeIn;">Prototype
+                            demo video</h1>
+                        <a href="#" data-toggle="modal" data-target="#prototype-video-modal"><img class="play-icon" src="../images/play-icon.png"
+                                alt="icon"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                    <div id="explainer-video">
+                        <h1 class="text-center wow fadeIn" data-wow="" duration="1s" style="visibility: visible; animation-name: fadeIn;">Let's
+                            invest in our future</h1>
+                        <a href="#" data-toggle="modal" data-target="#explainer-video-modal"><img class="play-icon" src="../images/play-icon.png"
+                                alt="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="skynet-utility">
@@ -751,7 +769,7 @@
                         <a href="https://www.reddit.com/user/ViazOfficial" target="_blank" class="social-icons">
                             <img src="../images/reddit-icon.png" alt="icon">
                         </a>
-                        <a href="https://t.me/ViazOfficial" target="_blank" class="social-icons">
+                        <a href="https://t.me/ViazOfficialAnnouncements" target="_blank" class="social-icons">
                             <img src="../images/telegram-icon.png" alt="icon">
                         </a>
                         <a href="https://twitter.com/ViazOfficial" target="_blank" class="social-icons">
@@ -799,7 +817,8 @@
         </a>
     </div>
 
-    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal" aria-hidden="true">
+    <div class="modal fade" id="prototype-video-modal" tabindex="-1" role="dialog" aria-labelledby="prototype-video-modal"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -809,13 +828,33 @@
                 </div>
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9hEUcZCwXPc?autoplay=1&vq=highres&rel=0"
-                            id="road-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ryjbELtTDYw?autoplay=1&vq=highres&rel=0"
+                            id="prototype-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="explainer-video-modal" tabindex="-1" role="dialog" aria-labelledby="explainer-video-modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4QLfzHCQ6xc?autoplay=1&vq=highres&rel=0"
+                            id="explainer-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="language-modal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
