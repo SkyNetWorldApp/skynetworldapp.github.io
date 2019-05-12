@@ -524,6 +524,11 @@ li.dropdown:hover > .dropdown-menu {
     margin: 30px auto;
 }
 
+#announcement-modal .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
 #prototype-video-modal .close,
 #explainer-video-modal .close {
     position: absolute;
@@ -565,6 +570,11 @@ li.dropdown:hover > .dropdown-menu {
 	}
 }
 
+#announcement-modal .close {
+    color: #073257;
+    opacity: 0.5;
+}
+
 #language-modal .close {
     position: absolute;
     right: 12px;
@@ -595,12 +605,53 @@ li.dropdown:hover > .dropdown-menu {
     border-top-right-radius: 10px;
 }
 
+#announcement-modal .modal-header {
+    background-color: #EEF7FF;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
 #language-modal .modal-title {
     color: #FFFFFF;
 }
 
 #language-modal .modal-body {
     padding: 15px;
+}
+
+#announcement-modal .modal-body {
+    padding: 15px;
+    background-color: #EEF7FF;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;    
+}
+
+#announcement-modal .modal-body p {
+    color: #073257;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+#announcement-modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+#announcement-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+#announcement-modal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 #language-list {
@@ -623,11 +674,16 @@ li.dropdown:hover > .dropdown-menu {
 #language-list li a:focus,
 #language-list li a:hover,
 #language-list span:focus,
-#language-list span:hover, {
+#language-list span:hover {
     text-decoration: none;
     background-color: transparent;
     color: rgba(255,255,255,.60);
     transition: all 0.3s;
+}
+
+.p2pb2b-logo {
+    margin: 0 auto;
+    max-width: 220px;
 }
 
 .remove[style] {

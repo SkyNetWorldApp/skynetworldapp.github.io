@@ -40,6 +40,10 @@ $('#language-modal').on('show.bs.modal', function (e) {
     $('body').addClass('remove');
 });
 
+$('#announcement-modal').on('show.bs.modal', function (e) {
+    $('body').addClass('remove');
+});
+
 $('.nav a').click(function () {
     $('.navbar-collapse').collapse('hide');
 });
