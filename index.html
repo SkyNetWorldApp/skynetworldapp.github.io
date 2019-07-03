@@ -34,6 +34,54 @@
             text-align: left;
             vertical-align: middle;
         }
+
+        #featured {
+            background: #EEF7FF;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        #featured h3 {
+            color: #073257;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        #articles-featured {
+            margin-bottom: 50px;
+        }
+
+        #articles-featured img {
+            width: 150px;
+        }
+
+        #listing-featured {
+            max-width: 992px;
+            margin: 0 auto;
+        }
+
+        #listing-featured img {
+            width: 175px;
+        }
+
+        #listing-featured img:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            .col-10>.col-md-2 {
+                width: 20%;
+            }
+
+            #articles-featured img {
+                width: 200px;
+            }
+
+            #listing-featured img {
+                width: 230px;
+            }
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127929184-1"></script>
@@ -128,6 +176,125 @@
                         </a>
                         <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
                             target="_blank" class="btn header-btn signup-btn">Signup for whitelist&nbsp; &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="featured">
+        <div class="container">
+            <div class="row text-center">
+                <h3 class="wow fadeIn" data-wow-duration="1s">Featured in</h3>
+            </div>
+            <div id="articles-featured">
+                <div class="row col-10 hidden-xs">
+                    <div class="col-md-2">
+                        <a href="https://coinswitch.co/news/10-upcoming-cryptocurrency-icos-with-greatest-potential-in-2019"
+                            target="_blank">
+                            <img src="images/coinswitch.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://bitcoinexchangeguide.com/viaz-ico/" target="_blank">
+                            <img src="images/bitcoinexchangeguide.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://www.ccn.com/first-major-dapp-on-tezos-rebranded-viaz-io-re-branded-from-skynetworld-org/"
+                            target="_blank">
+                            <img src="images/ccn.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://www.cryptonewsz.com/an-exclusive-interview-with-coo-of-viaz-first-major-dapp-on-tezos/8917/"
+                            target="_blank">
+                            <img src="images/cryptonewsz.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://btcmanager.com/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/?q=/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/&"
+                            target="_blank">
+                            <img src="images/btcmanager.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="row hidden-sm hidden-md hidden-lg">
+                    <div class="col-xs-6">
+                        <a href="https://coinswitch.co/news/10-upcoming-cryptocurrency-icos-with-greatest-potential-in-2019"
+                            target="_blank">
+                            <img src="images/coinswitch.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://bitcoinexchangeguide.com/viaz-ico/" target="_blank">
+                            <img src="images/bitcoinexchangeguide.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://www.ccn.com/first-major-dapp-on-tezos-rebranded-viaz-io-re-branded-from-skynetworld-org/"
+                            target="_blank">
+                            <img src="images/ccn.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://www.cryptonewsz.com/an-exclusive-interview-with-coo-of-viaz-first-major-dapp-on-tezos/8917/"
+                            target="_blank">
+                            <img src="images/cryptonewsz.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://btcmanager.com/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/?q=/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/&"
+                            target="_blank">
+                            <img src="images/btcmanager.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="listing-featured">
+                <div class="row hidden-xs">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.trackico.io/ico/viaz/" target="_blank">
+                            <img src="images/trackico.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://icobench.com/ico/viaz" target="_blank">
+                            <img src="images/icobench.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://icoholder.com/en/viaz-26924" target="_blank">
+                            <img src="images/icoholder.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.coinschedule.com/cryptocurrency/viaz" target="_blank">
+                            <img src="images/coinschedule.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="row hidden-sm hidden-md hidden-lg">
+                    <div class="col-xs-6">
+                        <a href="https://www.trackico.io/ico/viaz/" target="_blank">
+                            <img src="images/trackico.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://icobench.com/ico/viaz" target="_blank">
+                            <img src="images/icobench.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://icoholder.com/en/viaz-26924" target="_blank">
+                            <img src="images/icoholder.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://www.coinschedule.com/cryptocurrency/viaz" target="_blank">
+                            <img src="images/coinschedule.png" alt="img" class="img-responsive">
+                        </a>
                     </div>
                 </div>
             </div>
