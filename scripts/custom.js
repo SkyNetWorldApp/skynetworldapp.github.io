@@ -49,6 +49,10 @@ $('.nav a').click(function () {
 });
 
 $(document).ready(function () {
+    setTimeout(function () {
+        $("#announcement-modal").modal('show');
+    }, 3000);
+
     $('[data-toggle="tooltip"]').tooltip();
 
     $('.ec-lock-container').hover(function () {
@@ -87,13 +91,13 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 60) {
             $('.navbar').css('background', '#1860F0');
         }
+
         if ($(this).scrollTop() < 60) {
             $('.navbar').css({ 'background': 'transparent' });
         }
     });
 
     $("a").on('click', function (event) {
-
         if (this.hash !== "") {
             event.preventDefault();
 
