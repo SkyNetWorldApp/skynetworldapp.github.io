@@ -118,11 +118,12 @@
                     <div class="button-container">
                         <a href="https://p2pb2b.io/token-sale/VIAZ/2" target="_blank"
                             class="btn header-btn whitepaper-btn"
-                            onclick="getOutboundLink('https://p2pb2b.io/token-sale/VIAZ/2'); return false;">
+                            onclick="trackIEO('https://p2pb2b.io/token-sale/VIAZ/2'); return false;">
                             Register for IEO &nbsp;&nbsp; &rarr;
                         </a>
-                        <a href="documents/Viaz-Whitepaper_EN.pdf" target="_blank"
-                            class="btn header-btn signup-btn">Whitepaper
+                        <a href="https://p2pb2b.io/token-sale/VIAZ/2" target="_blank" class="btn header-btn signup-btn"
+                            onclick="trackWhitepaper('documents/Viaz-Whitepaper_EN.pdf'); return false;">
+                            Whitepaper
                             <img src="images/download-icon-white.png" alt="img">
                         </a>
                     </div>
@@ -1386,13 +1387,25 @@
     </script>
 
     <script>
-        var getOutboundLink = function (url) {
+        var trackIEO = function (url) {
             gtag('event', 'click', {
                 'event_category': 'IEO',
                 'event_label': url,
                 'transport_type': 'beacon',
                 'event_callback': function () { document.location = url; }
             });
+
+            console.log('IEO');
+        }
+
+        var trackWhitepaper = function (url) {
+            gtag('event', 'click', {
+                'event_category': 'Whitepaper',
+                'event_label': url,
+                'transport_type': 'beacon',
+                'event_callback': function () { document.location = url; }
+            });
+            console.log('Whitepaper');
         }
     </script>
 </body>
