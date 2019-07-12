@@ -15,7 +15,32 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/flag-icon.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .fixed-tgwidget {
+            position: fixed;
+            right: 0%;
+            top: 30%;
+            z-index: 10009;
+        }
 
+        .fixed-1worldwidget {
+            position: fixed;
+            left: 0%;
+            top: 12%;
+            z-index: 10009;
+        }
+
+        @media (max-width: 768px) {
+            .fixed-tgwidget {
+                display: none;
+            }
+
+            .fixed-1worldwidget {
+                display: none;
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127929184-1"></script>
     <script>
@@ -44,6 +69,24 @@
     </div>
     <div class="fixed-telegram">
         <a href="https://t.me/ViazOfficialAnnouncements" class="fixed-telegram-icon" target="_blank">Telegram</a>
+    </div>
+
+    <div class="fixed-tgwidget">
+        <!-- Colombia widget code -->
+        <div id="TG_Widget" style="display:none;width:300px; height:250px;" frameBorder="0">
+            <iframe id="colombia_widget" width="300" height="250"
+                src="https://static.clmbtech.com/ad/commons/js/lpf.html?grp=viaz&wid=wGrey"></iframe>
+        </div>
+    </div>
+
+    <div class="fixed-1worldwidget">
+        <!-- 1World Online widget code -->
+        <div id="1World_Widget" style="display:none;width:160px; height:600px">
+            <div data-owo-type="widget" data-owo-code="9bc15c18-d746-4246-aa22-2536bdf53b27" data-owo-mode="smart3">
+            </div>
+            <script src="https://frontend.1worldonline.com/poller-constructor.js?ncu=%%CLICK_URL_ESC%%"
+                type="text/javascript" async></script>
+        </div>
     </div>
 
     <nav class="navbar navbar-fixed-top">
@@ -1231,7 +1274,6 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -1407,6 +1449,31 @@
             });
             console.log('Whitepaper');
         }
+    </script>
+
+    <script type="text/javascript">
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"), results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function () {
+            switch (getParameterByName('utm_source')) {
+                case 'TG_Widget':
+                    $('#TG_Widget').css('display', 'inline');
+                    break;
+                case '1World_Widget':
+                    $('#1World_Widget').css('display', 'inline');
+                    break;
+                default:
+                    //Native ad, display no creative
+                    break;
+            }
+        });
     </script>
 </body>
 
