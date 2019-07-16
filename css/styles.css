@@ -1625,10 +1625,6 @@ span.dot-green::after {
 }
 
 @media (min-width: 768px) {
-    .col-10>.col-md-2 {
-        width: 20%;
-    }
-
     #articles-featured img {
         width: 200px;
     }
