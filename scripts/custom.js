@@ -49,9 +49,9 @@ $('.nav a').click(function () {
 });
 
 $(document).ready(function () {
-    setTimeout(function () {
-        $("#announcement-modal").modal('show');
-    }, 3000);
+    // setTimeout(function () {
+    //     $("#announcement-modal").modal('show');
+    // }, 3000);
 
     $('[data-toggle="tooltip"]').tooltip();
 
