@@ -5,20 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SkyNet</title>
+    <title>VIAZ</title>
     <link rel="shortcut icon" href="../images/ico.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/flag-icon.css">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N4654V2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127929184-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-127929184-1');
+    </script>
+    <!-- Hotjar Tracking Code for https://viaz.io -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1026102, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
-    <a href="https://t.me/skynetcommunity" target="_blank" class="fixed-telegram-icon">
-        <img src="../images/telegram.svg" alt="image">
-    </a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4654V2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <div class="fixed-telegram">
+        <a href="https://t.me/ViazOfficialAnnouncements" class="fixed-telegram-icon" target="_blank">Telegram</a>
+    </div>
     <nav class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -29,20 +72,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="../images/logo.png" alt="logo">
+                <a class="navbar-brand" href="../views/fr.html">
+                    <img src="../images/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="my-navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">Accueil</a></li>
-                    <li><a href="#about">A propos de nous</a></li>
+                    <li><a href="#about">VIAZ</a></li>
                     <li><a href="#documents">Documents</a></li>
                     <li><a href="#roadmap">Feuille de route</a></li>
                     <li><a href="#team">L’équipe</a></li>
-                    <li><a href="mailto:info@skynetworld.org">Nous contacter</a></li>
+                    <li><a href="#articles">Des articles</a></li>
+                    <li> <a href="https://medium.com/@ViazOfficial" target="_blank">Blog</a></li>
+                    <li><a href="mailto:info@viaz.io">Nous contacter</a></li>
                     <li class="dropdown visible-md visible-lg hidden-xs hidden-sm">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-fr"></span> FR<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class="flag-icon flag-icon-fr"></span>
+                            FR<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
                             <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
@@ -56,7 +103,8 @@
                         </ul>
                     </li>
                     <li class="visible-xs visible-sm hidden-md hidden-lg">
-                        <a href="#" data-toggle="modal" data-target="#language-modal"><span class="flag-icon flag-icon-fr"></span>
+                        <a href="#" data-toggle="modal" data-target="#language-modal"><span
+                                class="flag-icon flag-icon-fr"></span>
                             FR</b></a>
                     </li>
                 </ul>
@@ -66,13 +114,13 @@
     <div id="home">
         <div class="hidden-xs black-transparent-layer"></div>
         <video autoplay muted loop id="myVideo" preload="auto" class="hidden-xs">
-            <source src="../videos/video.mp4" type="video/mp4">
-            <source src="../videos/video.webm" type="video/webm">
+            <source id="videomp4" type="video/mp4">
+            <source id="videowebm" type="video/webm">
             <p>This browser does not support the video element.</p>
         </video>
-        <img src="../images/main-header.png" alt="icon" class="hidden-sm hidden-md hidden-lg" id="main-header">
+        <img src="../images/main-header.jpg" alt="icon" class="hidden-sm hidden-md hidden-lg" id="main-header">
         <div class="green-arrow">
-            <a href="https://app.skynetworld.org" target="_blank">Prototype &rarr; </a>
+            <a href="https://app.viaz.io" target="_blank">Prototype &rarr; </a>
         </div>
         <a href="#about">
             <img src="../images/dropper-icon.png" alt="icon" class="down-icon hidden-xs hidden-sm">
@@ -84,10 +132,107 @@
                     <h1>Première grande plateforme de financement décentralisé peer to peer sur Tezos</h1>
                     <img src="../images/white-line.png" alt="line" class="line">
                     <div class="button-container">
-                        <a href="../documents/SkyNet-Whitepaper-FR.pdf" target="_blank" class="btn header-btn whitepaper-btn">Livret blanc
-                            <img src="../images/download-icon-top.png" alt="img" style="width: 15px; margin-left: 7px;"></a>
-                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
-                            target="_blank" class="btn header-btn signup-btn">S'inscrire au livre blanc &nbsp;&nbsp; &rarr;</a>
+                        <a href="https://p2pb2b.io/token-sale/VIAZ/2" target="_blank"
+                            class="btn header-btn whitepaper-btn">S'inscrire à l'IEO &nbsp;&nbsp; &rarr;
+                        </a>
+                        <a href="../documents/Viaz-Whitepaper_FR.pdf" target="_blank"
+                            class="btn header-btn signup-btn">Livret
+                            <img src="../images/download-icon-white.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="featured">
+        <div class="container">
+            <div class="row text-center">
+                <h3 class="wow fadeIn" data-wow-duration="1s">En vedette dans</h3>
+            </div>
+            <div id="articles-featured">
+                <div class="row">
+                    <div class="col-xs-6 col-md-2">
+                        <a href="https://coinswitch.co/news/10-upcoming-cryptocurrency-icos-with-greatest-potential-in-2019"
+                            target="_blank">
+                            <img src="../images/coinswitch.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <a href="https://bitcoinexchangeguide.com/viaz-ico/" target="_blank">
+                            <img src="../images/bitcoinexchangeguide.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <a href="https://www.ccn.com/first-major-dapp-on-tezos-rebranded-viaz-io-re-branded-from-skynetworld-org/"
+                            target="_blank">
+                            <img src="../images/ccn.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <a href="https://www.ibtimes.com/crypto-trump-you-are-wrong-anyone-can-be-bank-2806553"
+                            target="_blank">
+                            <img src="../images/ibt.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <a href="https://www.cryptonewsz.com/an-exclusive-interview-with-coo-of-viaz-first-major-dapp-on-tezos/8917/"
+                            target="_blank">
+                            <img src="../images/cryptonewsz.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <a href="https://btcmanager.com/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/?q=/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/&"
+                            target="_blank">
+                            <img src="../images/btcmanager.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="listing-featured">
+                <div class="row hidden-xs">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.trackico.io/ico/viaz/" target="_blank">
+                            <img src="../images/trackico.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://icobench.com/ico/viaz" target="_blank">
+                            <img src="../images/icobench.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://icoholder.com/en/viaz-26924" target="_blank">
+                            <img src="../images/icoholder.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.coinschedule.com/cryptocurrency/viaz" target="_blank">
+                            <img src="../images/coinschedule.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="row hidden-sm hidden-md hidden-lg">
+                    <div class="col-xs-6">
+                        <a href="https://www.trackico.io/ico/viaz/" target="_blank">
+                            <img src="../images/trackico.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://icobench.com/ico/viaz" target="_blank">
+                            <img src="../images/icobench.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://icoholder.com/en/viaz-26924" target="_blank">
+                            <img src="../images/icoholder.png" alt="img" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="https://www.coinschedule.com/cryptocurrency/viaz" target="_blank">
+                            <img src="../images/coinschedule.png" alt="img" class="img-responsive">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -97,10 +242,11 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <h2 class="text-center wow fadeIn" data-wow-duration="1s">Pourquoi choisir SkyNet?</h2>
+                <h2 class="text-center wow fadeIn" data-wow-duration="1s">Pourquoi choisir VIAZ?</h2>
                 <img src="../images/blue-line.png" alt="line" class="line">
                 <div class="margin-left">
-                    <div class="col-md-4 col-md-offset text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <div class="col-md-4 col-md-offset text-center wow slideInUp" data-wow-duration="1s"
+                        data-wow-delay="300ms">
                         <img src="../images/11.svg" alt="img" class="choose-icon">
                         <h3>Sûr et sécurisé</h3>
                         <p>Construit sur une chaîne de <br /> sécurité financière sécurisée Tezos.</p>
@@ -112,7 +258,7 @@
                     </div>
                     <div class="col-md-4 text-center wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
                         <img src="../images/33.svg" alt="img" class="choose-icon">
-                        <h3>Financement sans risque</h3>
+                        <h3>Financement à faible risque</h3>
                         <p>Prêts entièrement garantis <br /> et détenus à titre de propriété.</p>
                     </div>
                 </div>
@@ -127,7 +273,10 @@
                     <h2 class="wow fadeIn" data-wow-duration="1s">Raisons de participer</h2>
                     <ul id="reasons">
                         <li>
-                            <img src="../images/check_icon.png" alt="#">Prototype de travail en cours
+                            <img src="../images/check_icon.png" alt="#">Premier Dapp majeur sur Tezos
+                        </li>
+                        <li>
+                            <img src="../images/check_icon.png" alt="#">Prototype de travail
                         </li>
                         <li>
                             <img src="../images/check_icon.png" alt="#">Jetons investisseurs initiaux pour 1 an
@@ -143,9 +292,6 @@
                         </li>
                         <li>
                             <img src="../images/check_icon.png" alt="#">En conversation avec les partenaires fiat
-                        </li>
-                        <li>
-                            <img src="../images/check_icon.png" alt="#">Premier Dapp majeur sur Tezos
                         </li>
                         <li>
                             <img src="../images/check_icon.png" alt="#">Entièrement décentralisé
@@ -174,7 +320,8 @@
                         </div>
                         <div class="col-xs-6"><br>
                             <p>Message au monde</p>
-                            <a href="../documents/SkyNet-Manifesto-FR.pdf" target="_blank"><img src="../images/download-icon.png" alt="icon" class="download-img"></a>
+                            <a href="../documents/Viaz-Manifesto_FR.pdf" target="_blank"><img
+                                    src="../images/download-icon.png" alt="icon" class="download-img"></a>
                         </div>
                     </div>
                 </div>
@@ -186,8 +333,9 @@
                         </div>
                         <div class="col-xs-6"><br>
                             <p>Livre blanc</p>
-                            <small>Version 1.1</small><br>
-                            <a href="../documents/SkyNet-Whitepaper-FR.pdf" target="_blank"><img src="../images/download-icon.png" alt="icon" class="download-img"></a>
+                            <small>Version 1.3</small><br>
+                            <a href="../documents/Viaz-Whitepaper_FR.pdf" target="_blank"><img
+                                    src="../images/download-icon.png" alt="icon" class="download-img"></a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +348,8 @@
                         <div class="col-xs-6"><br>
                             <p>Livre jaune</p>
                             <small>Version 1.1</small><br>
-                            <a href=".../documents/SkyNet-Yellowpaper.pdf" target="_blank"><img src="../images/download-icon.png" alt="icon" class="download-img"></a>
+                            <a href="../documents/Viaz-Yellowpaper.pdf" target="_blank"><img
+                                    src="../images/download-icon.png" alt="icon" class="download-img"></a>
                         </div>
                     </div>
                 </div>
@@ -208,18 +357,38 @@
         </div>
     </div>
 
-    <div id="future-invest">
-        <h1 class="text-center wow fadeIn" data-wow duration='1s'>Investissons dans notre future</h1>
-        <a href="#" data-toggle="modal" data-target="#video-modal"><img src="../images/play-icon.png" alt="icon"></a>
+    <div id="videos">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 no-padding">
+                    <div id="prototype-video">
+                        <h1 class="text-center wow fadeIn" data-wow="" duration="1s"
+                            style="visibility: visible; animation-name: fadeIn;">Prototype
+                            demo video</h1>
+                        <a href="#" data-toggle="modal" data-target="#prototype-video-modal"><img class="play-icon"
+                                src="../images/play-icon.png" alt="icon"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                    <div id="explainer-video">
+                        <h1 class="text-center wow fadeIn" data-wow="" duration="1s"
+                            style="visibility: visible; animation-name: fadeIn;">Let's
+                            invest in our future</h1>
+                        <a href="#" data-toggle="modal" data-target="#explainer-video-modal"><img class="play-icon"
+                                src="../images/play-icon.png" alt="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="skynet-utility">
+    <div id="viaz-utility">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
-                    <h3>L'utilité de SkyNet est de fournir une plate-forme de financement décentralisée, reliant ses 
+                    <h3>L'utilité de VIAZ est de fournir une plate-forme de financement décentralisée, reliant ses
                         utilisateurs et servant de canal entre la cryptosphère et la monnaie fiduciaire.</h3>
-                    <ul class="skynet-utilities">
+                    <ul class="viaz-utilities">
                         <li>
                             <img src="../images/check_icon.png" alt="#">Emprunter du fiat en garantissant le crypto
                         </li>
@@ -245,156 +414,271 @@
     </div>
 
     <div id="roadmap">
-        <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">Le chemin de l'avenir</h2>
+        <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">Feuille de route</h2>
         <img src="../images/blue-line.png" alt="#" class="line">
-        <div id="road-map-desktop" class="hidden-xs hidden-sm">
-            <br><br><br>
-            <img src="../images/blue-line-map.png" alt="" style="width: 100%;">
-            <img src="../images/gray-line-map.png" alt="" style="width: 100%;">
-            <div class="row" style="margin-top: -565px; margin-bottom: 120px;">
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d">2014</div>
-                    <p class="text-center map-txt-d">Élaboration du concept</p>
-                </div>
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d">2015</div>
-                    <p class="text-center map-txt-d">Études de marché</p>
-                </div>
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d">2016</div>
-                    <p class="text-center map-txt-d">Capitalisation</p>
-                </div>
+        <div class="container">
+            <div id="roadmap-logo" class="text-center">
+                <img src="../images/logo-blue.svg" alt="">
             </div>
-            <div class="row">
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d2">2019</div>
-                    <p class="text-center map-txt-d">Financement immobilier</p>
-                    <ul class="map-ul-d">
-                        <li>Transfert de titres</li>
-                        <li>Financement reposant sur l'actif</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d1">2018</div>
-                    <p class="text-center map-txt-d">Développement de prototypes</p>
-                    <ul class="map-ul-d">
-                        <li>Financement Fiat</li>
-                        <li>Financement Crypto</li>
-                        <li>Financement inter-chaînes</li>
-                        <li>Assurance</li>
-                        <li>Identité (récupération des clés)</li>
-                        <li>Sur la plateforme Liquidité NET</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d">2017</div>
-                    <p class="text-center map-txt-d">Engager l'équipe</p>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d2">2020</div>
-                    <p class="text-center map-txt-d">Liquidation sur plate-forme</p>
-                </div>
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d2">2021</div>
-                    <p class="text-center map-txt-d">Remise de fonds</p>
-                </div>
-                <div class="col-md-4 map-d1">
-                    <div class="circle-d2">2022</div>
-                    <p class="text-center map-txt-d">Intégration des paiements en ligne</p>
-                </div>
-            </div>
-        </div>
+            <ul class="roadmap-list">
+                <li class="roadmap-inverted wow fadeIn" data-wow-duration="1s" data-wow-delay="300ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-blue.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2014</h4>
+                        </div>
+                        <div class="roadmap-left q4">
+                            <p>
+                                <span class="dot">Genèse du concept </span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
 
-        <div id="mobile-version" class="hidden-md hidden-lg">
-            <br><br><br>
-            <img src="../images/blue-line-ver.png" alt="line" class="map-lines-mobile" style="height: 710px;">
-            <img src="../images/gray-line-ver.png" alt="line" class="map-lines-mobile" style="height: 750px;">
-            <div class="row mobile-row" style="margin-top: -1410px;">
-                <div class="col-xs-5">
-                    <div class="circle-d">2014</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Élaboration du concept</p>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d">2015</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Études de marché</p>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d">2016</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Capitalisation</p>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d">2017</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Engager l'équipe</p>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d1">2018</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d">Développement de prototypes</p>
-                    <ul class="map-ul-m">
-                        <li>Financement Fiat</li>
-                        <li>Financement Crypto</li>
-                        <li>Financement inter-chaînes</li>
-                        <li>Assurance</li>
-                        <li>Identité (récupération des clés)</li>
-                        <li>Sur la plateforme Liquidité NET</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d2">2019</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d">Financement immobilier</p>
-                    <ul class="map-ul-m">
-                        <li>Transfert de titres</li>
-                        <li>Financement reposant sur l'actif</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d2">2020</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Liquidation sur plate-forme</p>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d2">2021</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Remise de fonds</p>
-                </div>
-            </div>
-            <div class="row mobile-row">
-                <div class="col-xs-5">
-                    <div class="circle-d2">2022</div>
-                </div>
-                <div class="col-xs-7">
-                    <p class="map-txt-d map-margin-top-m">Intégration des paiements en ligne</p>
-                </div>
-            </div>
+                <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="300ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-blue.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel text-right roadmap-padding-right">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2015</h4>
+                        </div>
+                        <div class="roadmap-right q3">
+                            <p>
+                                <span class="dot">Analyse du marché des prêts P2P</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="roadmap-inverted wow fadeIn" data-wow-duration="1s" data-wow-delay="400ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-blue.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2016</h4>
+                        </div>
+                        <div class="roadmap-left q3">
+                            <p> <span class="dot">Financement de la startup</span> </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="400ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-blue.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel text-right roadmap-padding-right">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2017</h4>
+                        </div>
+                        <div class="roadmap-right q2">
+                            <p>
+                                <span class="dot">Recrutement de l’équipe principale</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-right q4 roadmap-margin-top">
+                            <p>
+                                <span class="dot">Lancement du développement du prototype</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="roadmap-inverted wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-blue.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel ">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title ">2018 </h4>
+                        </div>
+                        <div class="roadmap-left q1">
+                            <p>
+                                <span class="dot">Conception/ébauche du livre blanc initial</span>
+                                <span class="dot">Développement d'un prototype[conception de l'interface
+                                    utilisateur].</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-left q2 roadmap-margin-top">
+                            <p>
+                                <span class="dot top">Lancement de l'équipe interne/essai du prototype niv [v .1.0]
+                                    <br>
+                                    <span class="roadmap-inner-text">Création de profil(s) utilisateur(s)</span>
+                                    <br>
+                                    <span class="roadmap-inner-text">Financement du robinet Tez pour les tests de
+                                        plate-forme</span>
+                                    <br>
+                                    <span class="roadmap-inner-text">Transactions enregistrées sur betanet Tezos</span>
+                                </span>
+                                <span class="dot top">Lancement d'un programme continu de sensibilisation aux
+                                    partenariats stratégiques</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-left q3 roadmap-margin-top">
+                            <p>
+                                <span class="dot top">Développement de sites Web</span>
+                                <span class="dot">Social media kickoff</span>
+                                <span class="dot">Lancement/test d'apprentissage interne d'alphanet [v.1.1]
+                                    <br>
+                                    <span class="roadmap-inner-text">Fiat funding</span>
+                                    <br>
+                                    <span class="roadmap-inner-text">Sync avec tezos mainnet</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="roadmap-left q4 roadmap-margin-top">
+                            <p>
+                                <span class="dot top">Lancement du site phase 1 [viaz.io]
+                                    <br>
+                                    <span class="roadmap-inner-text">Vidéo d'introduction/explication</span>
+                                    <br>
+                                    <span class="roadmap-inner-text"> Whitepaper </span>
+                                    <br>
+                                    <span class="roadmap-inner-text"> Yellowpaper </span>
+                                    <br>
+                                    <span class="roadmap-inner-text">Traductions [10 langues]</span>
+                                </span>
+                                <span class="dot">Implémentation UI/UX pour betanet VIAZ</span>
+                                <span class="dot">Planification/conception préliminaire d'applications mobiles</span>
+                                <span class="dot">Lancement de la campagne de marketing
+                                    <br>
+                                    <span class="roadmap-inner-text">Listes des sites web de l’IEO</span>
+                                    <br>
+                                    <span class="roadmap-inner-text">Campagne Bounty</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-green.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel text-right roadmap-padding-right roadmap-panel-green">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title roadmap-title-green">2019</h4>
+                        </div>
+                        <div class="roadmap-right q1 roadmap-green">
+                            <p>
+                                <span class="dot dot-green">Lancement du site phase 2
+                                    <br>
+                                    <span class="roadmap-inner-text-right">Lancement du betanet VIAZ</span>
+                                    <br>
+                                    <span class="roadmap-inner-text-right">Portail Web des contributions</span>
+                                    <br>
+                                    <span class="roadmap-inner-text-right roadmap-push-right">Mise en œuvre de
+                                        KYC/AML</span>
+                                </span>
+                                <span class="dot dot-green">Lancement et test d'applications mobiles par l'équipe
+                                    interne</span>
+                                <span class="dot dot-green">Audits de contrats intelligents</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-right q2 roadmap-grey roadmap-margin-top">
+                            <p>
+                                <span class="dot dot-grey">Lancement de L’IEO</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-right q3 roadmap-grey roadmap-margin-top">
+                            <p>
+                                <span class="dot dot-grey">Audit/distribution symbolique de l'IEO</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-right q4 roadmap-grey roadmap-margin-top">
+                            <p>
+                                <span class="dot dot-grey">Liste d’échange</span>
+                                <span class="dot dot-grey">Lancement de Mainnet</span>
+                                <span class="dot dot-grey">Financement inter-chaînes</span>
+                                <span class="dot dot-grey">Sur la plate-forme VIAZ liquidité</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="roadmap-inverted wow fadeIn" data-wow-duration="1s" data-wow-delay="600ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-grey.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel future">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2020 </h4>
+                        </div>
+                        <div class="roadmap-left q1 roadmap-grey">
+                            <p>
+                                <span class="dot dot-grey">Lancement des applications mobile [iOS/Android]</span>
+                                <span class="dot dot-grey">Staking and baking integration</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-left q2 roadmap-grey roadmap-margin-top">
+                            <p>
+                                <span class="dot dot-grey top">Financement immobilier
+                                    <br>
+                                    <span class="roadmap-grey roadmap-inner-text">Transfert de titre</span>
+                                    <br>
+                                    <span class="roadmap-grey roadmap-inner-text">Financement reposant sur
+                                        l'actif</span>
+                                </span>
+                                <span class="dot dot-grey top">Identity [Key retrieval]</span>
+                                <span class="dot dot-grey top">Cartes de débit</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-left q3 roadmap-grey roadmap-margin-top">
+                            <p>
+                                <span class="dot dot-grey top">Réassurance de prêt</span>
+                                <span class="dot dot-grey top">Université en ligne pour les développeurs
+                                    [Michelson/OCaml]</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-left q4 roadmap-grey roadmap-margin-top">
+                            <p>
+                                <span class="dot dot-grey top">Projets de financement à grande échelle [Immeubles
+                                    commerciaux de grande hauteur, infrastructure publique]</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="600ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-grey.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel future text-right roadmap-padding-right">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2021</h4>
+                        </div>
+                        <div class="roadmap-right q1 roadmap-grey">
+                            <p>
+                                <span class="dot dot-grey">Liquidation sur plateforme</span>
+                            </p>
+                        </div>
+                        <div class="roadmap-right q3 roadmap-grey roadmap-margin-top">
+                            <p> <span class="dot dot-grey">Transferts de fonds</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="roadmap-inverted wow fadeIn" data-wow-duration="1s" data-wow-delay="700ms">
+                    <div class="roadmap-badge warning">
+                        <img class="roadmap-circle" src="../images/middle-circle-grey.svg" alt="">
+                    </div>
+                    <div class="roadmap-panel future">
+                        <div class="roadmap-heading">
+                            <h4 class="roadmap-title">2022 </h4>
+                        </div>
+                        <div class="roadmap-left q2 roadmap-grey">
+                            <p>
+                                <span class="dot dot-grey">Intégration des paiements en ligne</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -402,75 +686,96 @@
         <div class="container">
             <h2 class="text-center wow fadeIn" data-wow-duration="1s">Jetons utilitaires</h2>
             <img src="../images/blue-line.png" alt="img" class="line">
-            <div class="row token-margin-left">
-                <div class="col-md-1"></div>
-                <div class="col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="300ms">
-                    <canvas id="mycanvas" width="256" height="256"></canvas>
+            <div class="row">
+                <div class="col-md-3 wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                    <canvas id="token-chart" width="256" height="256"></canvas>
+                    <div id="tokenchart-tooltip"></div>
                 </div>
-                <div class="col-md-3 wow fadeIn token-section" data-wow-duration="1s" data-wow-delay="500ms">
-                    <div>
-                            <h4>Distribution de jetons</h4>
-                            <p>
-                                <img src="../images/11.png" alt="#" class="list-type-img">
-                                <span>35%</span> Vente publique
-                            </p>
-                            <p>
-                                <img src="../images/22.png" alt="#" class="list-type-img">
-                                <span>25%</span> Cotisants précoces
-                                <span class="ec-lock-container" data-toggle="tooltip" data-placement="right" title="Investi pendant 12 mois par ICO">
-                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
-                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
-                                </span>
-                            </p>
-                            <p>
-                                <img src="../images/33.png" alt="#" class="list-type-img">
-                                <span>15%</span> Coffre-fort privé
-                                <span class="ps-lock-container" data-toggle="tooltip" data-placement="right" title="Investi pendant 18 mois par ICO">
-                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
-                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
-                                </span>
-                            </p>
-                            <p>
-                                <img src="../images/44.png" alt="#" class="list-type-img">
-                                <span>15%</span> Équipe
-                                <span class="t-lock-container" data-toggle="tooltip" data-placement="right" title="Voté depuis 24 mois par ICO">
-                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
-                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
-                                </span>
-                            </p>
-                            <p>
-                                <img src="../images/55.png" alt="#" class="list-type-img">
-                                <span>10%</span> Fondateurs
-                                <span class="f-lock-container" data-toggle="tooltip" data-placement="right" title="Voté depuis 24 mois par ICO">
-                                    <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
-                                    <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
-                                </span>
-                            </p>
+                <div class="col-md-3 wow slideInUp" data-wow-duration="1s" data-wow-delay="400ms">
+                    <div id="token-section">
+                        <h4>Distribution de jetons</h4>
+                        <p>
+                            <img src="../images/11.png" alt="#" class="list-type-img">
+                            <span>35%</span> Vente publique
+                        </p>
+                        <p>
+                            <img src="../images/22.png" alt="#" class="list-type-img">
+                            <span>25%</span> Cotisants précoces
+                            <span class="ec-lock-container" data-toggle="tooltip" data-placement="right"
+                                title="Investi pendant 12 mois par IEO">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/33.png" alt="#" class="list-type-img">
+                            <span>15%</span> Coffre-fort privé
+                            <span class="ps-lock-container" data-toggle="tooltip" data-placement="right"
+                                title="Investi pendant 18 mois par IEO">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/44.png" alt="#" class="list-type-img">
+                            <span>15%</span> Équipe
+                            <span class="t-lock-container" data-toggle="tooltip" data-placement="right"
+                                title="Voté depuis 24 mois par IEO">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
+                        <p>
+                            <img src="../images/55.png" alt="#" class="list-type-img">
+                            <span>5%</span> Bounty/Marketing
+                        </p>
+                        <p>
+                            <img src="../images/66.png" alt="#" class="list-type-img">
+                            <span>5%</span> Fondateurs
+                            <span class="f-lock-container" data-toggle="tooltip" data-placement="right"
+                                title="Voté depuis 24 mois par IEO">
+                                <img src="../images/lock-icon.png" alt="#" class="lock-icon locked">
+                                <img src="../images/unlock-icon.png" alt="#" class="lock-icon unlocked">
+                            </span>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3 fund-box wow fadeIn" data-wow-duration="1s" data-wow-delay="700ms">
-                    <h4 id="use-funds-heading">Utilisation des fonds</h4>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Développement des affaires
-                    </p>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Développement de logiciels
-                    </p>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Développement des infrastructures
-                    </p>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Emploi
-                    </p>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Marketing / Expansion mondiale
-                    </p>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Frais de contentieux
-                    </p>
-                    <p>
-                        <img src="../images/b1.png" alt="#" class="list-type-img"> Dépenses diverses
-                    </p>
+                <div class="col-md-3 wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
+                    <canvas id="utilization-chart" width="256" height="256"></canvas>
+                    <div id="utilizationchart-tooltip"></div>
+                </div>
+                <div class="col-md-3 wow slideInUp" data-wow-duration="1s" data-wow-delay="600ms">
+                    <div id="utilization-section">
+                        <h4>Utilisation des fonds</h4>
+                        <p>
+                            <img src="../images/00.png" alt="#" class="list-type-img">
+                            <span>25%</span> Marketing/Expansion mondiale
+                        </p>
+                        <p>
+                            <img src="../images/11.png" alt="#" class="list-type-img">
+                            <span>20%</span> Emploi
+                        </p>
+                        <p>
+                            <img src="../images/22.png" alt="#" class="list-type-img">
+                            <span>18%</span> Développement de logiciels
+                        </p>
+                        <p>
+                            <img src="../images/33.png" alt="#" class="list-type-img">
+                            <span>17%</span> Développement des infrastructures
+                        </p>
+                        <p>
+                            <img src="../images/44.png" alt="#" class="list-type-img">
+                            <span>15%</span> Développement des affaires
+                        </p>
+                        <p>
+                            <img src="../images/55.png" alt="#" class="list-type-img">
+                            <span>3%</span> Dépenses diverses
+                        </p>
+                        <p>
+                            <img src="../images/66.png" alt="#" class="list-type-img">
+                            <span>2%</span> Frais de contentieux
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -481,46 +786,29 @@
             <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">Équipe centrale</h2>
             <img src="../images/blue-line.png" alt="img" class="line">
             <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
-                <div class="col-md-3 team-member">
+                <div class="col-xs-6 col-md-3 team-member">
                     <div class="team-head">
                         <img src="../images/peter.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/peter-meronek-416462175" target="_blank"
+                            class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
                     </div>
                     <h4 class="team-name text-center">Peter Meronek</h4>
                     <p class="team-design text-center">CEO</p>
                 </div>
-                <div class="col-md-3 team-member">
+                <div class="col-xs-6 col-md-3 team-member">
                     <div class="team-head">
                         <img src="../images/stephen.png" alt="photo" class="team-photo">
-                        <a href="https://www.linkedin.com/in/stephen-andrews-170186bb" target="_blank" class="team-social-link">
+                        <a href="https://www.linkedin.com/in/stephen-andrews-170186bb" target="_blank"
+                            class="team-social-link">
                             <img src="../images/linkedin.png" alt="photo" class="social-image">
                         </a>
                     </div>
                     <h4 class="team-name text-center">Stephen Andrews</h4>
                     <p class="team-design text-center">CTO</p>
                 </div>
-                <div class="col-md-3 team-member">
-                    <div class="team-head">
-                        <img src="../images/tejinder.png" alt="photo" class="team-photo">
-                        <a href="https://www.linkedin.com/in/tejinder-sandhu-64699b96" target="_blank" class="team-social-link">
-                            <img src="../images/linkedin.png" alt="photo" class="social-image">
-                        </a>
-                    </div>
-                    <h4 class="team-name text-center">Tejinder Sandhu</h4>
-                    <p class="team-design text-center">COO</p>
-                </div>
-                <div class="col-md-3 team-member">
-                    <div class="team-head">
-                        <img src="../images/nauman.png" alt="photo" class="team-photo">
-                        <a href="https://www.linkedin.com/in/nauman-iqbal-883246a3" target="_blank" class="team-social-link">
-                            <img src="../images/linkedin.png" alt="photo" class="social-image">
-                        </a>
-                    </div>
-                    <h4 class="team-name text-center">Nauman Iqbal</h4>
-                    <p class="team-design text-center">CMO</p>
-                </div>
-            </div>
-            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="500ms">
-                <div class="col-md-3 team-member">
+                <div class="col-xs-6 col-md-3 team-member">
                     <div class="team-head">
                         <img src="../images/catsigma.png" alt="photo" class="team-photo">
                         <a href="https://twitter.com/catsigma" target="_blank" class="team-social-link">
@@ -528,61 +816,173 @@
                         </a>
                     </div>
                     <h4 class="team-name text-center">Catsigma</h4>
-                    <p class="team-design text-center">Développeur Michelson senior</p>
+                    <p class="team-design text-center hidden-xs">Développeur Michelson senior</p>
+                    <p class="team-design text-center hidden-sm hidden-md hidden-lg">Développeur</p>
                 </div>
-               
-                <div class="col-md-3 team-member">
+                <div class="col-xs-6 col-md-3 team-member">
                     <div class="team-head">
                         <img src="../images/william.png" alt="photo" class="team-photo">
+                        <a href="https://www.linkedin.com/in/william-lyman-9627b325" target="_blank"
+                            class="team-social-link">
+                            <img src="../images/linkedin.png" alt="photo" class="social-image">
+                        </a>
                     </div>
                     <h4 class="team-name text-center">William Lyman</h4>
                     <p class="team-design text-center">Développeur</p>
                 </div>
-                <div class="col-md-3 team-member">
-                        <div class="team-head">
-                            <img src="../images/aizaz.png" alt="photo" class="team-photo">
-                            <a href="https://www.linkedin.com/in/aizazzaheer" target="_blank" class="team-social-link">
-                                <img src="../images/linkedin.png" alt="photo" class="social-image">
-                            </a> </div>
-                        <h4 class="team-name text-center">Aizaz Zaheer</h4>
-                        <p class="team-design text-center">Développeur</p>
-                    </div>
-                <div class="col-md-3 team-member">
-                    <div class="team-head">
-                        <img src="../images/mac.png" alt="photo" class="team-photo">
-                        <a href="https://www.linkedin.com/in/mac-yap-74a71348" target="_blank" class="team-social-link">
-                            <img src="../images/linkedin.png" alt="photo" class="social-image">
-                        </a> </div>
-                    <h4 class="team-name text-center">Mac Stevenson Yap</h4>
-                    <p class="team-design text-center">Concepteur</p>
-                </div>
             </div>
-            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="700ms">
-               
-                <div class="col-md-3 team-member">
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="400ms">
+                <div class="col-xs-6 col-md-3 team-member">
                     <div class="team-head">
                         <img src="../images/steve.png" alt="photo" class="team-photo">
-                        <a href="https://www.linkedin.com/in/steve-austin-2421181" target="_blank" class="team-social-link">
+                        <a href="https://www.linkedin.com/in/steve-austin-2421181" target="_blank"
+                            class="team-social-link">
                             <img src="../images/linkedin.png" alt="photo" class="social-image">
-                        </a> </div>
+                        </a>
+                    </div>
                     <h4 class="team-name text-center">Steve Austin</h4>
                     <p class="team-design text-center">Conseiller</p>
                 </div>
-                <div class="col-md-3 team-member">
+                <div class="col-xs-6 col-md-3 team-member">
                     <div class="team-head">
-                        <img src="../images/keith.png" alt="photo" class="team-photo">
-                        <a href="https://www.linkedin.com/in/keithglenn45" target="_blank" class="team-social-link">
-                            <img src="../images/linkedin.png" alt="photo" class="social-image">
-                        </a> </div>
-                    <h4 class="team-name text-center">Keith Glenn</h4>
+                        <img src="../images/james.png" alt="photo" class="team-photo">
+                    </div>
+                    <h4 class="team-name text-center">James Falkener</h4>
                     <p class="team-design text-center">Conseiller</p>
                 </div>
-                <div class="col-md-3 team-member">
-                    <div class="team-head">
-                        <img src="../images/stuarts.png" alt="photo" class="team-photo">
+            </div>
+        </div>
+    </div>
+
+    <div id="articles">
+        <div class="container">
+            <h2 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="500ms">Des articles</h2>
+            <img src="../images/blue-line.png" alt="img" class="line">
+            <div class="row wow slideInUp" data-wow-duration="1s" data-wow-delay="300ms">
+                <div class="owl-carousel owl-theme articles-slider">
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-8.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>July 15, 2019</p>
+                                </span>
+                                <h4>Crypto To Trump: You Are Wrong...</h4>
+                                <a href="https://www.ibtimes.com/crypto-trump-you-are-wrong-anyone-can-be-bank-2806553"
+                                    target="_blank" class="read-more-btn">Lire la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="team-name text-center">Stuarts Walker Hersant Humphries</h4>
-                    <p class="team-design text-center">Conseiller juridique</p>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-7.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>June 7, 2019</p>
+                                </span>
+                                <h4>10 Upcoming ICOs With Greatest Potential...</h4>
+                                <a href="https://coinswitch.co/news/10-upcoming-cryptocurrency-icos-with-greatest-potential-in-2019"
+                                    target="_blank" class="read-more-btn">Lire la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-6.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>February 18, 2019</p>
+                                </span>
+                                <h4>An Exclusive Interview With COO of VIAZ...</h4>
+                                <a href="https://www.cryptonewsz.com/an-exclusive-interview-with-coo-of-viaz-first-major-dapp-on-tezos/8917/
+                                " target="_blank" class="read-more-btn">Lire
+                                    la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-5.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>October 26, 2018</p>
+                                </span>
+                                <h4>VIAZ ICO: Tezos-Based Peer To Peer Blockchain...</h4>
+                                <a href="https://bitcoinexchangeguide.com/viaz-ico/" target="_blank"
+                                    class="read-more-btn">Lire
+                                    la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-4.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>October 23, 2018</p>
+                                </span>
+                                <h4>First Major DAPP on Tezos Rebranded: VIAZ.io</h4>
+                                <a href="https://www.ccn.com/first-major-dapp-on-tezos-rebranded-viaz-io-re-branded-from-skynetworld-org/"
+                                    target="_blank" class="read-more-btn">Lire la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-3.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>October 2, 2018</p>
+                                </span>
+                                <h4>Skynet World, A Peer To Peer Blockchain Lending...</h4>
+                                <a href="https://bitcoinexchangeguide.com/skynet-world-blockchain-lending-solution-to-rename-after-skynet-name-confusion/"
+                                    target="_blank" class="read-more-btn">Lire la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-2.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>October 1, 2018</p>
+                                </span>
+                                <h4>Skynet Controversy: Similarly Named Tezos dApp...</h4>
+                                <a href="https://btcmanager.com/skynet-controversy-similarly-named-tezos-dapp-promises-enhanced-peer-to-peer-lending/"
+                                    target="_blank" class="read-more-btn">Lire la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="article">
+                            <div class="article-image">
+                                <img src="../images/article-1.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="article-description">
+                                <span>
+                                    <p>September 25, 2018</p>
+                                </span>
+                                <h4>SkyNet: First Major DAPP on Tezos</h4>
+                                <a href="https://www.ccn.com/skynet-first-major-dapp-on-tezos/" target="_blank"
+                                    class="read-more-btn">Lire
+                                    la suite &nbsp;&rarr;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -594,52 +994,53 @@
                 <h2 class="text-center">Ne manquez pas l'occasion de vous tenir au courant</h2>
                 <p class="text-center">Soyez informé des détails de la vente de jetons</p>
                 <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 25px;">
-                                <a id="footer-subscribe-button" href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                    <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 25px;">
+                        <a id="footer-subscribe-button"
+                            href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
                             target="_blank">S'abonner &rarr;</a>
                     </div>
                     <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 40px;">
-                        <a href="https://www.facebook.com/skynetworldorg" target="_blank" class="social-icons">
+                        <a href="https://www.facebook.com/viazofficial" target="_blank" class="social-icons">
                             <img src="../images/facebook-icon.png" alt="icon">
                         </a>
-                       <!-- <a href="https://github.com/skynetworldorg" target="_blank" class="social-icons">
-                            <img src="images/github-icon.png" alt="icon">
-                        </a> -->
-                        <a href="https://medium.com/@skynetworldorg" target="_blank" class="social-icons">
+                        <a href="https://medium.com/@ViazOfficial" target="_blank" class="social-icons">
                             <img src="../images/medium-icon.png" alt="icon">
                         </a>
-                        <a href="https://www.reddit.com/user/skynetworld" target="_blank" class="social-icons">
+                        <a href="https://www.reddit.com/user/ViazOfficial" target="_blank" class="social-icons">
                             <img src="../images/reddit-icon.png" alt="icon">
                         </a>
-                        <a href="https://t.me/skynetcommunity" target="_blank" class="social-icons">
+                        <a href="https://t.me/ViazOfficialAnnouncements" target="_blank" class="social-icons">
                             <img src="../images/telegram-icon.png" alt="icon">
                         </a>
-                        <a href="https://twitter.com/skynetworldorg" target="_blank" class="social-icons">
+                        <a href="https://twitter.com/ViazOfficial" target="_blank" class="social-icons">
                             <img src="../images/twitter-icon.png" alt="icon">
                         </a>
-                        <a href="https://www.youtube.com/channel/UCpbKIYSTS0DOPkQqRrY_KBA" target="_blank" class="social-icons">
+                        <a href="https://www.youtube.com/channel/UC0T2NqXgg8Tki9s0Osi2E3w" target="_blank"
+                            class="social-icons">
                             <img src="../images/youtube-icon.png" alt="icon">
                         </a>
                     </div>
                 </div>
                 <div class="row footer-info">
                     <div class="col-md-4">
-                        <img src="../images/logo.png" alt="logo" class="img-responsive">
-                        <div class="logo-text">SkyNet relie les bailleurs de fonds et les emprunteurs du monde entier à la chaîne de blocs Tezos décentralisée.</div>
+                        <img src="../images/logo.svg" alt="logo" class="img-responsive">
+                        <div class="logo-text">VIAZ relie les bailleurs de fonds et les emprunteurs du monde entier à
+                            la chaîne de blocs Tezos décentralisée.</div>
                     </div>
                     <div class="col-md-2">
                         <a href="#home">Accueil</a>
-                        <a href="#about">À propos de nous</a>
+                        <a href="#about">VIAZ</a>
                         <a href="#roadmap">Feuille de route</a>
                         <a href="#documents">Documents</a>
                         <a href="#team">L'équipe</a>
                     </div>
                     <div class="col-md-3">
-                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe" target="_blank">S'inscrire</a>
-                        <a href="../documents/termsandconditions.pdf" target="_blank">Termes et conditions</a>
-                        <a href="mailto:info@skynetworld.org">Nous contacter</a>
-                        <a href="mailto:info@skynetworld.org">info@skynetworld.org</a>
-                        <a href="mailto:media@skynetworld.org">media@skynetworld.org</a>
+                        <a href="#articles">Des articles</a>
+                        <a href="https://medium.com/@ViazOfficial" target="_blank">Blog</a>
+                        <a href="https://emailoctopus.com/lists/9c953204-bd0e-11e8-a3c9-06b79b628af2/forms/subscribe"
+                            target="_blank">S'inscrire</a>
+                        <a href="../documents/Viaz-Website_T&CS.pdf" target="_blank">Termes et conditions</a>
+                        <a href="mailto:info@viaz.io">info@viaz.io</a>
                     </div>
                     <div class="col-md-3 store-buttons">
                         <a href="#"><img src="../images/app-store.png" alt="app-icon" class="img-responsive app"></a>
@@ -651,13 +1052,14 @@
     </div>
 
     <div id="footer-bottom">
-        <p class="text-center">&copy; 2018 SkyNet Inc.</p>
+        <p class="text-center">&copy; 2019 VIAZ Inc.</p>
         <a href="#home">
             <img src="../images/top.svg" alt="#">
         </a>
     </div>
 
-    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal" aria-hidden="true">
+    <div class="modal fade" id="prototype-video-modal" tabindex="-1" role="dialog"
+        aria-labelledby="prototype-video-modal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -667,82 +1069,238 @@
                 </div>
                 <div class="modal-body">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JSt8LxxINr8?autoplay=1&vq=highres&rel=0"
-                            id="road-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/ryjbELtTDYw?autoplay=1&vq=highres&rel=0"
+                            id="prototype-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="language-modal"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title text-center">Choisissez votre langue</h4>
-            </div>
-            <div class="modal-body">
-                <ul id="language-list">
-                    <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
-                    <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
-                    <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
-                    <li><a href="hi.html"><span class="flag-icon flag-icon-in"></span> HI</a></li>
-                    <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
-                    <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
-                    <li><a href="kr.html"><span class="flag-icon flag-icon-kr"></span> KR</a></li>
-                    <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
-                    <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
-                </ul>
+
+    <div class="modal fade" id="explainer-video-modal" tabindex="-1" role="dialog"
+        aria-labelledby="explainer-video-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/9hEUcZCwXPc?autoplay=1&vq=highres&rel=0"
+                            id="explainer-modal-video" allowscriptaccess="always" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="modal fade" id="announcement-modal" tabindex="-1" role="dialog" aria-labelledby="announcement-modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title text-center">Announcement</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p>2nd session of IEO has started<br>
+                            <a href="https://p2pb2b.io/token-sale/VIAZ/3" target="_blank">Click here</a> to participate
+                        </p>
+                        <a href="https://p2pb2b.io/token-sale/VIAZ/3" target="_blank">
+                            <img src="../images/p2pb2b.png" class="p2pb2b-logo img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="language-modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title text-center">Choisissez votre langue</h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="language-list">
+                        <li><a href="../index.html"><span class="flag-icon flag-icon-gb"></span> EN</a></li>
+                        <li><a href="cn.html"><span class="flag-icon flag-icon-cn"></span> CN</a></li>
+                        <li><a href="de.html"><span class="flag-icon flag-icon-de"></span> DE</a></li>
+                        <li><a href="hi.html"><span class="flag-icon flag-icon-in"></span> HI</a></li>
+                        <li><a href="es.html"><span class="flag-icon flag-icon-es"></span> ES</a></li>
+                        <li><a href="jp.html"><span class="flag-icon flag-icon-jp"></span> JP</a></li>
+                        <li><a href="kr.html"><span class="flag-icon flag-icon-kr"></span> KR</a></li>
+                        <li><a href="pt.html"><span class="flag-icon flag-icon-pt"></span> PT</a></li>
+                        <li><a href="ru.html"><span class="flag-icon flag-icon-ru"></span> RU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../scripts/custom.js"></script>
     <script>
         $(document).ready(function () {
-            var ctx = $("#mycanvas").get(0).getContext("2d");
+            var tokenChart = $("#token-chart").get(0).getContext("2d");
+            var utilizationChart = $("#utilization-chart").get(0).getContext("2d");
 
-            var data = [
+            var tokenData = [
                 {
                     value: 35,
-                    color: "#1040A6",
-                    highlight: "#052C80",
+                    color: "#0C4080",
+                    highlight: "#072A54",
                     label: "Vente publique"
                 },
                 {
                     value: 25,
-                    color: "#2B6FC2",
-                    highlight: "#134E96",
+                    color: "#1C5AA6",
+                    highlight: "#123B6D",
                     label: "Cotisants précoces"
                 },
                 {
                     value: 15,
-                    color: "#4698FC",
-                    highlight: "#2774D1",
+                    color: "#377FD6",
+                    highlight: "#24538D",
                     label: "Coffre-fort privé"
                 },
                 {
                     value: 15,
-                    color: "#5EBCFF",
-                    highlight: "#2694E3",
+                    color: "#4698FC",
+                    highlight: "#2E64A6",
                     label: "Équipe"
                 },
                 {
-                    value: 10,
+                    value: 5,
+                    color: "#5EBCFF",
+                    highlight: "#3E7CA8",
+                    label: "Bounty/Marketing"
+                }
+                ,
+                {
+                    value: 5,
                     color: "#5ED7FF",
-                    highlight: "#1BBCF2",
+                    highlight: "#3E8EA8",
                     label: "Fondateurs"
                 }
             ];
 
-            var chart = new Chart(ctx).Doughnut(data);
+            var utilizationData = [
+                {
+                    value: 25,
+                    color: "#072D5C",
+                    highlight: "#042145",
+                    label: "Marketing/Expansion mondiale"
+                },
+                {
+                    value: 20,
+                    color: "#0C4080",
+                    highlight: "#072A54",
+                    label: "Emploi"
+                },
+                {
+                    value: 18,
+                    color: "#1C5AA6",
+                    highlight: "#123B6D",
+                    label: "Développement de logiciels"
+                },
+                {
+                    value: 17,
+                    color: "#377FD6",
+                    highlight: "#24538D",
+                    label: "Développement des infrastructures"
+                },
+                {
+                    value: 15,
+                    color: "#4698FC",
+                    highlight: "#2E64A6",
+                    label: "Développement des affaires"
+                },
+                {
+                    value: 3,
+                    color: "#5EBCFF",
+                    highlight: "#3E7CA8",
+                    label: "Dépenses diverses"
+                },
+                {
+                    value: 2,
+                    color: "#5ED7FF",
+                    highlight: "#3E8EA8",
+                    label: "Frais de contentieux"
+                }
+            ];
+
+            var myTokenChart = new Chart(tokenChart).Doughnut(tokenData, {
+                customTooltips: function (tooltip) {
+                    var tooltipEl = $('#tokenchart-tooltip');
+
+                    if (!tooltip) {
+                        tooltipEl.css({
+                            opacity: 0
+                        });
+                        return;
+                    }
+
+                    tooltipEl.removeClass('above below');
+                    tooltipEl.addClass(tooltip.yAlign);
+
+                    var parts = tooltip.text.split(":");
+                    var innerHtml = '<span>' + parts[0].trim() + ': ' + parts[1].trim() + '%' + '</span>';
+                    tooltipEl.html(innerHtml);
+
+                    tooltipEl.css({
+                        opacity: 1,
+                        left: tooltip.chart.canvas.offsetLeft + tooltip.x + 'px',
+                        top: tooltip.chart.canvas.offsetTop + tooltip.y + 'px',
+                        fontFamily: tooltip.fontFamily,
+                        fontSize: tooltip.fontSize,
+                        fontStyle: tooltip.fontStyle,
+                    });
+                }
+            });
+
+            var myUtilizationChart = new Chart(utilizationChart).Doughnut(utilizationData, {
+                customTooltips: function (tooltip) {
+                    var tooltipEl = $('#utilizationchart-tooltip');
+
+                    if (!tooltip) {
+                        tooltipEl.css({
+                            opacity: 0
+                        });
+                        return;
+                    }
+
+                    tooltipEl.removeClass('above below');
+                    tooltipEl.addClass(tooltip.yAlign);
+
+                    var parts = tooltip.text.split(":");
+                    var innerHtml = '<span>' + parts[0].trim() + ': ' + parts[1].trim() + '%' + '</span>';
+                    tooltipEl.html(innerHtml);
+
+                    tooltipEl.css({
+                        opacity: 1,
+                        left: tooltip.chart.canvas.offsetLeft + tooltip.x + 'px',
+                        top: tooltip.chart.canvas.offsetTop + tooltip.y + 'px',
+                        fontFamily: tooltip.fontFamily,
+                        fontSize: tooltip.fontSize,
+                        fontStyle: tooltip.fontStyle,
+                    });
+                }
+            });
         });
     </script>
 </body>

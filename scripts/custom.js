@@ -1,24 +1,58 @@
+document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        vid = document.getElementById("videomp4")
+        vid.setAttribute("src", "https://viaz.io/videos/video.mp4")
+        vid = document.getElementById("videowebm")
+        vid.setAttribute("src", "https://viaz.io/videos/video.webm")
+        document.getElementById("myVideo").load();
+    }
+}
+
 new WOW().init();
 
-var url = $("#road-modal-video").attr('src');
+var prototypeUrl = $("#prototype-modal-video").attr('src');
+var explainerUrl = $("#explainer-modal-video").attr('src');
 
-$("#road-modal-video").attr('src', '');
+$("#prototype-modal-video").attr('src', '');
+$("#explainer-modal-video").attr('src', '');
 
-$('#video-modal').on('show.bs.modal', function (e) {
+$('#prototype-video-modal').on('show.bs.modal', function (e) {
     $('body').addClass('remove');
-    $("#road-modal-video").attr('src', url);
-    $("#road-modal-video").attr('allow', "autoplay");
+    $("#prototype-modal-video").attr('src', prototypeUrl);
+    $("#prototype-modal-video").attr('allow', "autoplay");
 });
 
-$("#video-modal").on('hide.bs.modal', function () {
-    $("#road-modal-video").attr('src', '');
+$('#explainer-video-modal').on('show.bs.modal', function (e) {
+    $('body').addClass('remove');
+    $("#explainer-modal-video").attr('src', explainerUrl);
+    $("#explainer-modal-video").attr('allow', "autoplay");
+});
+
+$("#prototype-video-modal").on('hide.bs.modal', function () {
+    $("#prototype-modal-video").attr('src', '');
+});
+
+$("#explainer-video-modal").on('hide.bs.modal', function () {
+    $("#explainer-modal-video").attr('src', '');
 });
 
 $('#language-modal').on('show.bs.modal', function (e) {
     $('body').addClass('remove');
 });
 
+$('#announcement-modal').on('show.bs.modal', function (e) {
+    $('body').addClass('remove');
+});
+
+$('.nav a').click(function () {
+    $('.navbar-collapse').collapse('hide');
+});
+
 $(document).ready(function () {
+    // setTimeout(function () {
+    //     $("#announcement-modal").modal('show');
+    // }, 3000);
+
     $('[data-toggle="tooltip"]').tooltip();
 
     $('.ec-lock-container').hover(function () {
@@ -57,19 +91,13 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 60) {
             $('.navbar').css('background', '#1860F0');
         }
+
         if ($(this).scrollTop() < 60) {
             $('.navbar').css({ 'background': 'transparent' });
         }
     });
-    if ($(this).scrollTop() > 60) {
-        $('.navbar').css('background', '#1860F0');
-    }
-    if ($(this).scrollTop() < 60) {
-        $('.navbar').css({ 'background': 'transparent' });
-    }
 
     $("a").on('click', function (event) {
-
         if (this.hash !== "") {
             event.preventDefault();
 
@@ -82,4 +110,21 @@ $(document).ready(function () {
             });
         }
     });
+});
+
+$('.articles-slider').owlCarousel({
+    dots: true,
+    loop: false,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        1200: {
+            items: 3
+        }
+    }
 });
